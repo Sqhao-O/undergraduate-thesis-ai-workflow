@@ -3,6 +3,8 @@
 > 📌 **适用人群：** 想要了解从需求文档到最终排版全流程的用户  
 > ⏱️ **预计耗时：** 阅读本文档约 10 分钟，完成整个工作流约 2-4 周
 
+> 🔙 **返回** <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">📑 README 主文档 →</a> | 如需概览和快速开始，点击链接 →
+
 ---
 
 ## 目录
@@ -27,20 +29,20 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                     本科毕业论文 AI 辅助工作流                        │
-│                                                                     │
-│   ┌─────────┐    ┌─────────┐    ┌──────────┐    ┌──────────┐      │
-│   │  阶段一  │ →  │  阶段二  │ →  │  阶段三   │ →  │  阶段四   │      │
+│                     本科毕业论文 AI 辅助工作流                         │
+│                                                                    │
+│   ┌─────────┐    ┌─────────┐    ┌──────────┐    ┌──────────┐       │
+│   │  阶段一  │ →  │  阶段二  │ →  │  阶段三   │ →  │  阶段四   │       │
 │   │  需求    │    │  开发    │    │  初稿     │    │  转换     │      │
 │   │         │    │  仿真    │    │ Markdown  │    │ DOCX     │      │
-│   └────┬────┘    └────┬────┘    └─────┬────┘    └─────┬────┘      │
+│   └────┬────┘    └────┬────┘    └─────┬────┘    └─────┬────┘       │
 │        │              │               │               │            │
 │        ▼              ▼               ▼               ▼            │
 │   ┌─────────┐    ┌─────────┐    ┌──────────┐    ┌──────────┐      │
-│   │ Kimi    │    │ Claude  │    │ VS Code  │    │ Pandoc   │      │
-│   │ Agent   │    │ Code    │    │ / Typora │    │          │      │
-│   └─────────┘    └─────────┘    └──────────┘    └──────────┘      │
-│                                                                     │
+│   │ Kimi    │    │ Claude  │    │ Claude   │    │ Pandoc   │      │
+│   │ Agent   │    │ Code    │    │ Code     │    │          │      │
+│   └─────────┘    └─────────┘    └──────────┘    └──────────┘       │
+│                                                                    │
 │                                    ┌──────────┐                    │
 │                           ┌──────→ │  阶段五   │                    │
 │                           │        │ 人工修改  │ ←──────────┐       │
@@ -164,7 +166,7 @@
 
 ### 使用工具
 
-**Claude Code**（详见 [`01-claude-code-setup.md`](./01-claude-code-setup.md)）
+**Claude Code**（详见 <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">📖 Claude Code 配置教程 →</a>）
 
 ### 操作步骤
 
@@ -191,8 +193,7 @@
 #### ✅ 好的做法
 
 ```
-> 读取 src/simulator.py 文件，找到第45行的函数，
-  分析其时间复杂度，如果有优化空间请告诉我。
+> 请你读取当前文件夹下的《需求文档.md》，根据文档里的需求，完整编写可直接运行的代码，创建对应的工程文件，代码要添加详细注释，符合本科毕设的规范要求。
 
 > 我在运行时遇到了 TypeError: ... 错误，
   请帮我定位原因并修复。
@@ -236,15 +237,7 @@
 
 ### 目标
 
-将你的研究成果写成完整的学术论文初稿。
-
-### 推荐编辑器
-
-| 编辑器 | 特点 | 适合人群 |
-|--------|------|---------|
-| **VS Code** | 免费、功能强大、插件丰富 | 有一定基础的同学 |
-| **Typora** | 所见即所得、界面美观 | 追求写作体验的人 |
-| **Obsidian** | 双向链接、知识管理 | 喜欢记笔记的同学 |
+用Claude Code将你的研究成果写成完整的学术论文初稿，可以先创建一个 Markdown 文件，然后使用Claude Code根据模板填写内容。
 
 ### Markdown 论文模板结构
 
@@ -347,7 +340,7 @@ lang: zh-CN
 
 ### 使用工具
 
-**Pandoc**（详见 [`03-pandoc-usage.md`](./03-pandoc-usage.md)）
+**Pandoc**（详见 <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">📖 Pandoc 使用教程 →</a>）
 
 ### 操作步骤
 
@@ -430,7 +423,7 @@ lang: zh-CN
 
 ### 修改时长建议
 
-**至少预留 3-5 天**来专门做这件事。不要急于进入排版环节。
+**至少预留1-2个月时间**来专门做这件事。不要急于进入排版环节。
 
 ---
 
@@ -509,10 +502,10 @@ lang: zh-CN
 
 ### 使用工具
 
-**WorkBuddy（英文名）/ 小龙虾 / 腾讯小龙虾**  
+**WorkBuddy（腾讯小龙虾）下载地址：** https://www.codebuddy.cn/work/ 
 **Paper Check Skill 下载地址：** https://clawhub.ai/sashavegal/paper-check  
 
-详细操作指南 → [`05-workbuddy-guide.md`](./05-workbuddy-guide.md)
+详细操作指南 → <a href="./05-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">📖 WorkBuddy 排版教程 →</a>
 
 ### 核心流程概要
 
@@ -542,9 +535,9 @@ lang: zh-CN
 建议 **两者结合使用**：
 
 ```
-Markdown 论文
+Markdown 论文初稿
     ↓
-  Pandoc 转换
+  Pandoc 转换为 DOCX 格式
     ↓
   Lark-Formatter（初步排版：标题编号、字体、行距）
     ↓
@@ -609,24 +602,14 @@ Markdown 论文
 ### 总体时间线（以 6 周为例）
 
 ```
-第 1 周  ████████████████████░░░░░  阶段一+二：需求 + 开发
-第 2 周  ░░░███████████████████░░░  阶段二+三：开发 + 初稿
-第 3 周  ░░░░░░█████████████████░  阶段三：论文撰写
-第 4 周  ██████████████████████░░░  阶段五：人工修改完善（重点！）
-第 5 周  ░░░░░░░░░░░░████████████  阶段六+七：排版
-第 6 周  ░░░░░░░░░░░░░░░░████████  阶段八：校对 + 提交
+第  1  周   ████████████████████░░░░░   阶段一+二：需求 + 开发
+第  2  周   ░░░███████████████████░░░   阶段二+三：开发 + 初稿
+第  3  周   ░░░░░░█████████████████░    阶段三：论文撰写
+第 4-9 周   ██████████████████████░░░   阶段五：人工修改完善（重点！）
+第  10 周   ░░░░░░░░░░░░████████████    阶段六+七：排版
+第  11 周   ░░░░░░░░░░░░░░░░████████    阶段八：校对 + 提交
 ```
 
-### 关键里程碑
-
-| 时间节点 | 应完成的事项 |
-|----------|-------------|
-| 第 1 周末 | 需求明确、项目能跑起来 |
-| 第 2 周末 | 核心功能实现、有初步实验结果 |
-| 第 3 周末 | 论文初稿完成（Markdown 版） |
-| 第 4 周末 | 内容修改完成、论文质量过关 |
-| 第 5 周末 | 排版完成、格式无误 |
-| 第 6 周末 | 最终校对完毕、提交 |
 
 ---
 
@@ -685,10 +668,10 @@ Markdown 论文
 
 | 想了解更多？ | 跳转到 |
 |-------------|--------|
-| Claude Code 配置 | [`01-claude-code-setup.md`](./01-claude-code-setup.md) |
-| API 密钥配置 | [`02-cc-switch-guide.md`](./02-cc-switch-guide.md) |
-| Pandoc 使用 | [`03-pandoc-usage.md`](./03-pandoc-usage.md) |
-| WorkBuddy 排版 | [`05-workbuddy-guide.md`](./05-workbuddy-guide.md) |
+| Claude Code 配置 | <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📖 查看教程 →</a> |
+| API 密钥配置 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📖 查看教程 →</a> |
+| Pandoc 使用 | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📖 查看教程 →</a> |
+| WorkBuddy 排版 | <a href="./05-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📖 查看教程 →</a> |
 
 ---
 
@@ -696,20 +679,36 @@ Markdown 论文
 
 > 📍 **当前位置：第 4 篇 / 共 6 篇**（含 README）
 
-| ⬅️ **上一篇** | 🔵 **当前位置** | ⬇️ **下一篇** |
+### 🔗 快速跳转
+
+| ⬅️ **上一篇** | 🔵 **当前位置** | **下一篇 ➡️** |
 |:---:|:---:|:---:|
-| [📙 03-pandoc-usage.md](./03-pandoc-usage.md)<br><small>Pandoc 文档转换详解</small> | **📘 04-workflow-guide.md**<br><small>完整工作流 8 阶段图解与时间规划</small> | [📕 05-workbuddy-guide.md →](./05-workbuddy-guide.md)<br><small>WorkBuddy 智能排版实战</small> |
+| <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📄 上一篇</a><br><small>Pandoc 文档转换详解</small> | **📘 04-workflow-guide.md**<br><small>完整工作流 8 阶段图解与时间规划</small> | <a href="./05-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #0969da; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📔 下一篇 →</a><br><small>WorkBuddy 智能排版实战</small> |
+
+### 🚀 继续阅读
+
+<p align="center">
+
+<a href="./03-pandoc-usage.md" style="display: inline-block; padding: 10px 24px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; margin: 4px;">
+    ⬅️ 上一篇：Pandoc 使用详解
+</a>
+&nbsp;&nbsp;
+<a href="./05-workbuddy-guide.md" style="display: inline-block; padding: 10px 24px; background-color: #0969da; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; margin: 4px;">
+    ➡️ 下一篇：WorkBuddy 排版教程 →
+</a>
+
+</p>
 
 ### 📑 全部文档索引
 
 | # | 文档 | 状态 |
 |---|------|------|
-| 0 | [README.md — 主文档（项目总览）](../README.md) | ✅ 已读完 |
-| 1 | [01-claude-code-setup.md](./01-claude-code-setup.md) | ✅ 已读完 |
-| 2 | [02-cc-switch-guide.md](./02-cc-switch-guide.md) | ✅ 已读完 |
-| 3 | [03-pandoc-usage.md](./03-pandoc-usage.md) | ✅ 已读完 |
-| **4** | **04-workflow-guide.md** | ✅ **当前阅读中** |
-| 5 | [05-workbuddy-guide.md](./05-workbuddy-guide.md) | ⬅️ 最后1篇！ |
+| 0 | <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📄 README 主文档 →</a> | ✅ 已读完 |
+| 1 | <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📘 开始阅读 →</a> | ✅ 已读完 |
+| 2 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📗 开始阅读 →</a> | ✅ 已读完 |
+| 3 | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📙 开始阅读 →</a> | ✅ 已读完 |
+| **4** | **📕 04-workflow-guide.md** | ✅ **当前阅读中** |
+| 5 | <a href="./05-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📔 最后1篇！→</a> | ⬅️ 最后1篇！ |
 
 ---
 

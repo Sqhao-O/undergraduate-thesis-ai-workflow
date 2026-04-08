@@ -3,6 +3,8 @@
 > 📌 **适用人群：** 需要将 Markdown 论文转换为 Word (DOCX) 格式的用户  
 > ⏱️ **预计耗时：** 10-15 分钟（安装） + 5 分钟（学习基本使用）
 
+> 🔙 **返回** <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">📑 README 主文档 →</a> | 如需概览和快速开始，点击链接 →
+
 ---
 
 ## 目录
@@ -557,17 +559,33 @@ pandoc thesis.md -o thesis.docx --reference-doc=template.docx
 
 > 📍 **当前位置：第 3 篇 / 共 6 篇**（含 README）
 
-| ⬅️ **上一篇** | 🔵 **当前位置** | ⬇️ **下一篇** |
+### 🔗 快速跳转
+
+| ⬅️ **上一篇** | 🔵 **当前位置** | **下一篇 ➡️** |
 |:---:|:---:|:---:|
-| [📗 02-cc-switch-guide.md](./02-cc-switch-guide.md)<br><small>CC Switch 配置 API 密钥</small> | **📙 03-pandoc-usage.md**<br><small>Pandoc 安装验证与文档转换详解</small> | [📘 04-workflow-guide.md →](./04-workflow-guide.md)<br><small>完整工作流 8 阶段图解</small> |
+| <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📄 上一篇</a><br><small>CC Switch 配置 API 密钥</small> | **📙 03-pandoc-usage.md**<br><small>Pandoc 安装验证与文档转换详解</small> | <a href="./04-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #0969da; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📘 下一篇 →</a><br><small>完整工作流 8 阶段图解</small> |
+
+### 🚀 继续阅读
+
+<p align="center">
+
+<a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 10px 24px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; margin: 4px;">
+    ⬅️ 上一篇：CC Switch 配置
+</a>
+&nbsp;&nbsp;
+<a href="./04-workflow-guide.md" style="display: inline-block; padding: 10px 24px; background-color: #0969da; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; margin: 4px;">
+    ➡️ 下一篇：完整工作流图解 →
+</a>
+
+</p>
 
 ### 📑 全部文档索引
 
 | # | 文档 | 状态 |
 |---|------|------|
-| 0 | [README.md — 主文档（项目总览）](../README.md) | ✅ 已读完 |
-| 1 | [01-claude-code-setup.md](./01-claude-code-setup.md) | ✅ 已读完 |
-| 2 | [02-cc-switch-guide.md](./02-cc-switch-guide.md) | ✅ 已读完 |
-| **3** | **03-pandoc-usage.md** | ✅ **当前阅读中** |
-| 4 | [04-workflow-guide.md](./04-workflow-guide.md) | ⬅️ 接下来读 |
-| 5 | [05-workbuddy-guide.md](./05-workbuddy-guide.md) | ☐ 待阅读 |
+| 0 | <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📄 README 主文档 →</a> | ✅ 已读完 |
+| 1 | <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📘 开始阅读 →</a> | ✅ 已读完 |
+| 2 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📗 开始阅读 →</a> | ✅ 已读完 |
+| **3** | **📙 03-pandoc-usage.md** | ✅ **当前阅读中** |
+| 4 | <a href="./04-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📕 开始阅读 →</a> | ⬅️ 接下来读 |
+| 5 | <a href="./05-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📔 开始阅读 →</a> | ☐ 待阅读 |

@@ -3,6 +3,8 @@
 > 📌 **适用人群：** 需要对论文进行精细化 AI 排版和格式检查的用户  
 > ⏱️ **预计耗时：** 20-30 分钟（首次配置） + 10 分钟/每次排版
 
+> 🔙 **返回** <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">📑 README 主文档 →</a> | 如需概览和快速开始，点击链接
+
 ---
 
 ## 目录
@@ -495,27 +497,45 @@ Markdown 论文
 
 > 📍 **当前位置：第 5 篇 / 共 6 篇**（含 README）— **🎉 最后一篇！**
 
-| ⬅️ **上一篇** | 🔵 **当前位置** | ⬇️ **完成！回到开头** |
+### 🔗 快速跳转
+
+| ⬅️ **上一篇** | 🔵 **当前位置** | **🏁 完成！回到开头 ➡️** |
 |:---:|:---:|:---:|
-| [📘 04-workflow-guide.md](./04-workflow-guide.md)<br><small>完整工作流图解与时间规划</small> | **📕 05-workbuddy-guide.md**<br><small>WorkBuddy 智能排版实战</small> | [🏁 README.md →](../README.md)<br><small>回到主文档，回顾全部内容</small> |
+| <a href="./04-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📄 上一篇</a><br><small>完整工作流图解与时间规划</small> | **📔 05-workbuddy-guide.md**<br><small>WorkBuddy 智能排版实战</small> | <a href="../README.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">🏁 回到主页 →</a><br><small>回到主文档，回顾全部内容</small> |
 
 ### 📑 全部文档索引 — 阅读进度
 
 | # | 文档 | 状态 |
 |---|------|------|
-| 0 | [README.md — 主文档（项目总览）](../README.md) | ✅ 已读完 |
-| 1 | [01-claude-code-setup.md](./01-claude-code-setup.md) | ✅ 已读完 |
-| 2 | [02-cc-switch-guide.md](./02-cc-switch-guide.md) | ✅ 已读完 |
-| 3 | [03-pandoc-usage.md](./03-pandoc-usage.md) | ✅ 已读完 |
-| 4 | [04-workflow-guide.md](./04-workflow-guide.md) | ✅ 已读完 |
-| **5** | **05-workbuddy-guide.md** | ✅ **当前阅读中（最后一篇）** |
+| 0 | <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📄 README 主文档 →</a> | ✅ 已读完 |
+| 1 | <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📘 开始阅读 →</a> | ✅ 已读完 |
+| 2 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📗 开始阅读 →</a> | ✅ 已读完 |
+| 3 | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📙 开始阅读 →</a> | ✅ 已读完 |
+| 4 | <a href="./04-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📕 开始阅读 →</a> | ✅ 已读完 |
+| **5** | **📔 05-workbuddy-guide.md** | ✅ **当前阅读中（最后一篇）** |
 
 ---
 
-## 🎉 恭喜完成！
+## 🎉 恭喜完成全部阅读！
 
-> 你已经读完了本工作流的**全部 6 个文档**！现在可以：
->
-> - 🔙 **回顾总览** → 返回 [README.md](../README.md)
-> - 💻 **开始动手** → 从「快速开始」章节安装环境
-> - ✍️ **写论文去** → 祝毕业顺利！🎓
+<p align="center">
+
+### 🎓 恭喜！全部 6 个文档已读完！
+
+你现在可以：
+
+</p>
+
+<p align="center">
+
+<a href="../README.md#快速开始" style="display: inline-block; padding: 12px 28px; background-color: #0969da; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; margin: 8px;">
+    💻 从快速开始安装环境 →
+</a>
+&nbsp;&nbsp;
+<a href="../README.md" style="display: inline-block; padding: 12px 28px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; margin: 8px;">
+    🏁 回到 README 总览 →
+</a>
+
+</p>
+
+> 记住：**AI 帮你提效，才华属于你自己。祝你毕业顺利！** 🎓

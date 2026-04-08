@@ -3,6 +3,8 @@
 > 📌 **适用人群：** 从未使用过 Claude Code 的初学者  
 > ⏱️ **预计耗时：** 20-30 分钟
 
+> 🔙 **返回** <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">📑 README 主文档 →</a> | 如需概览和快速开始，点击链接
+
 ---
 
 ## 目录
@@ -342,7 +344,7 @@ claude --version
 
 ### 方法二：使用第三方 API（推荐国内用户）
 
-通过 CC Switch 配置其他 API 服务商（如 DeepSeek、MiniMax、Kimi 等），详见 [`02-cc-switch-guide.md`](./02-cc-switch-guide.md)。
+通过 CC Switch 配置其他 API 服务商（如 DeepSeek、MiniMax、Kimi 等），详见 <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">🔑 CC Switch 配置教程 →</a>。
 
 ---
 
@@ -628,25 +630,27 @@ claude
 
 ---
 
-> 💡 **下一步：** 学习如何使用 CC Switch 配置 API 密钥 → [`02-cc-switch-guide.md`](./02-cc-switch-guide.md)
+> 💡 **下一步：** 学习如何使用 CC Switch 配置 API 密钥 → <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">🔑 CC Switch 配置教程 →</a>
 
 ---
 
-## 📖 文档导航
+## 📖 文档导航 {#文档导航}
 
 > 📍 **当前位置：第 1 篇 / 共 6 篇**（含 README）
 
-| ⬅️ **上一篇** | 🔵 **当前位置** | ⬇️ **下一篇** |
+### 🔗 快速跳转
+
+| ⬅️ **上一篇** | 🔵 **当前位置** | **下一篇 ➡️** |
 |:---:|:---:|:---:|
-| [📄 README.md — 主文档](../README.md) | **📘 01-claude-code-setup.md**<br><small>Git + Node.js + Claude Code 安装配置</small> | [📗 02-cc-switch-guide.md →](./02-cc-switch-guide.md)<br><small>CC Switch 配置 API 密钥</small> |
+| <a href="../README.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📄 README.md</a> | **📘 01-claude-code-setup.md**<br><small>Git + Node.js + Claude Code 安装配置</small> | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #0969da; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📗 下一篇 →</a><br><small>CC Switch 配置 API 密钥</small> |
 
 ### 📑 全部文档索引
 
 | # | 文档 | 状态 |
 |---|------|------|
-| 0 | [README.md — 主文档（项目总览）](../README.md) | ✅ 已读完 |
-| **1** | **01-claude-code-setup.md** | ✅ **当前阅读中** |
-| 2 | [02-cc-switch-guide.md](./02-cc-switch-guide.md) | ⬅️ 接下来读 |
-| 3 | [03-pandoc-usage.md](./03-pandoc-usage.md) | ☐ 待阅读 |
-| 4 | [04-workflow-guide.md](./04-workflow-guide.md) | ☐ 待阅读 |
-| 5 | [05-workbuddy-guide.md](./05-workbuddy-guide.md) | ☐ 待阅读 |
+| 0 | <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📄 README 主文档 →</a> | ✅ 已读完 |
+| **1** | **📘 01-claude-code-setup.md** | ✅ **当前阅读中** |
+| 2 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📗 开始阅读 →</a> | ⬅️ 接下来读 |
+| 3 | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📙 开始阅读 →</a> | ☐ 待阅读 |
+| 4 | <a href="./04-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📕 开始阅读 →</a> | ☐ 待阅读 |
+| 5 | <a href="./05-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📔 开始阅读 →</a> | ☐ 待阅读 |
