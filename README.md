@@ -374,7 +374,7 @@ https://b23.tv/aBf4B83
 
 #### 步骤一：用 Kimi Agent 编写需求文档
 
-1. 打开 Kimi（https://kimi.moonshot.cn/）
+1. 打开 Kimi https://kimi.moonshot.cn/
 2. 切换到 **Agent 模式**（如果有的话）
 3. 告诉 Kimi 你的毕业论文题目和要求
 4. 让它帮你整理成一份**结构化的 Markdown 需求文档**
