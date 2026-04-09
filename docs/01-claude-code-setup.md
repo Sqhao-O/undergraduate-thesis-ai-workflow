@@ -404,7 +404,7 @@ explorer C:\Users\LENOVO
 
 ```json
 {
-  "lastOnboardingVersion": "1.0.0"
+  "changelogLastFetched": 1775491529999
 }
 ```
 
@@ -426,7 +426,7 @@ explorer C:\Users\LENOVO
 
 ```json
 {
-  "changelogLastFetched": 177053969××××,
+  "changelogLastFetched": 1770539699999,
   "hasCompletedOnboarding": true
 }
 ```
