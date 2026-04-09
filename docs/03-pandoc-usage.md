@@ -3,7 +3,7 @@
 > 📌 **适用人群：** 需要将 Markdown 论文转换为 Word (DOCX) 格式的用户  
 > ⏱️ **预计耗时：** 10-15 分钟（安装） + 5 分钟（学习基本使用）
 
-> 🔙 **返回** <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">📑 README 主文档 →</a> | 如需概览和快速开始，点击链接 →
+> 🔙 **返回** <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">📑 README 主文档 </a> | 如需概览和快速开始，点击链接 
 
 ---
 
@@ -14,10 +14,9 @@
 3. [验证安装成功](#验证安装成功)
 4. [查看支持的格式](#查看支持的格式)
 5. [基本转换命令](#基本转换命令)
-6. [使用 Word 模板保持格式](#使用-word-模板保持格式)
-7. [高级选项与技巧](#高级选项与技巧)
-8. [Markdown 写作规范](#markdown-写作规范)
-9. [常见问题](#常见问题)
+6. [高级选项与技巧](#高级选项与技巧)
+7. [Markdown 写作规范](#markdown-写作规范)
+8. [常见问题](#常见问题)
 
 ---
 
@@ -34,12 +33,12 @@ Pandoc 可以在数十种文档格式之间互相转换：
 
 ```
 ┌──────────┐
-│  Markdown │ ← 我们写论文用这个（简单、专注内容）
+│  Markdown│ ← 我们写论文初稿用这个（便于 ClaudeCode 直接操作）
 └─────┬────┘
       │ 转换
       ↓
 ┌──────────┐
-│   DOCX    │ ← 学校要求提交的格式（Word 文档）
+│   DOCX   │ ← 学校要求提交的格式（Word 文档）
 └──────────┘
 ```
 
@@ -53,7 +52,7 @@ Pandoc 可以在数十种文档格式之间互相转换：
 
 ## 安装 Pandoc
 
-### 方法一：官网下载安装包（推荐）
+### 官网下载安装包
 
 1. 打开浏览器，访问 **https://pandoc.org/installing.html**
 2. 根据你的操作系统选择对应的安装包：
@@ -73,28 +72,6 @@ Pandoc 可以在数十种文档格式之间互相转换：
    - 下载 `.pkg` 文件
    - 双击运行
    - 按提示拖拽到 Applications 文件夹
-
-### 方法二：使用包管理器（进阶）
-
-**Windows (Chocolatey)：**
-```bash
-choco install pandoc
-```
-
-**Windows (Scoop)：**
-```bash
-scoop install pandoc
-```
-
-**macOS (Homebrew)：**
-```bash
-brew install pandoc
-```
-
-**Linux (Ubuntu/Debian)：**
-```bash
-sudo apt install pandoc
-```
 
 ---
 
@@ -257,62 +234,6 @@ pandoc thesis.md -o thesis.pdf
 
 # Markdown 转 HTML 网页
 pandoc thesis.md -o thesis.html
-```
-
----
-
-## 使用 Word 模板保持格式 ⭐ 重要！
-
-这是论文转换中**最关键的参数**！
-
-学校通常有论文格式要求（字体、字号、页边距等）。如果你直接用默认方式转换，生成的 DOCX 可能不符合要求。**解决方案是使用学校的 Word 模板。**
-
-### 什么是 Reference Doc（参考模板）？
-
-Reference Doc 就是一个"样式母版"，告诉 Pandoc：
-- 正文用什么字体和字号
-- 标题用什么样式
-- 行距是多少
-- 页边距是多少
-
-### 准备模板文件
-
-1. 从学校教务处/导师处获取论文 Word 模板
-2. 通常命名为 `template.docx` 或 `论文模板.docx`
-3. 把它放在与你的 `thesis.md` 同一个文件夹下
-
-### 使用模板转换的命令
-
-```bash
-pandoc thesis.md -o thesis.docx --reference-doc=template.docx
-```
-
-#### 完整参数说明
-
-| 部分 | 含义 |
-|------|------|
-| `pandoc` | 程序名 |
-| `thesis.md` | 你的 Markdown 论文 |
-| `-o thesis.docx` | 输出的 Word 文件 |
-| `--reference-doc=` | 指定参考模板 |
-| `template.docx` | 学校提供的 Word 模板 |
-
-> 💡 **强烈建议：** 总是使用 `--reference-doc` 参数来生成符合学校要求的格式！
-
-### 如何制作自定义模板？
-
-如果学校没有提供模板，或者你想微调样式：
-
-1. 先创建一个基础的 DOCX 作为模板
-2. 用 Word 打开，修改样式：
-   - 修改「正文」样式的字体为宋体/Times New Roman
-   - 修改「标题 1」「标题 2」等的样式
-   - 设置页边距（通常上下左右 2.54cm 或按学校要求）
-3. 保存为 `my-template.docx`
-4. 转换时引用这个模板：
-
-```bash
-pandoc thesis.md -o thesis.docx --reference-doc=my-template.docx
 ```
 
 ---
@@ -515,7 +436,7 @@ pandoc thesis.md -o thesis.docx -V CJKmainfont="SimSun"
 **A:** 说明 Pandoc 没有被正确加入系统 PATH。
 - 重启终端窗口再试
 - 如果还不行，重新安装 Pandoc 并勾选 "Add to PATH" 选项
-- 重启电脑
+- 不想重装也可以自行在高级系统设置中配置 PATH 
 
 ### Q: 图片转换后不显示
 
@@ -557,27 +478,13 @@ pandoc thesis.md -o thesis.docx --reference-doc=template.docx
 
 ## 📖 文档导航
 
-> 📍 **当前位置：第 3 篇 / 共 6 篇**（含 README）
+> 📍 **当前位置：第 4 篇 / 共 6 篇**（含 README）
 
 ### 🔗 快速跳转
 
 | ⬅️ **上一篇** | 🔵 **当前位置** | **下一篇 ➡️** |
 |:---:|:---:|:---:|
 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📄 上一篇</a><br><small>CC Switch 配置 API 密钥</small> | **📙 03-pandoc-usage.md**<br><small>Pandoc 安装验证与文档转换详解</small> | <a href="./04-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #0969da; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📘 下一篇 →</a><br><small>完整工作流 8 阶段图解</small> |
-
-### 🚀 继续阅读
-
-<p align="center">
-
-<a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 10px 24px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; margin: 4px;">
-    ⬅️ 上一篇：CC Switch 配置
-</a>
-&nbsp;&nbsp;
-<a href="./04-workflow-guide.md" style="display: inline-block; padding: 10px 24px; background-color: #0969da; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; margin: 4px;">
-    ➡️ 下一篇：完整工作流图解 →
-</a>
-
-</p>
 
 ### 📑 全部文档索引
 
