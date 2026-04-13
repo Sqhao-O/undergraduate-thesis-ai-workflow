@@ -214,7 +214,7 @@ Claude Code 基于 Node.js 开发，所以需要先安装 Node.js。
 6. 点击 **Install**（开始安装）
 7. 等待安装完成，点击 **Finish**
 
-### 4.2 步骤三：验证 Node.js 安装
+### 4.3 步骤三：验证 Node.js 安装
 
 打开终端（PowerShell），输入：
 
@@ -484,32 +484,69 @@ Skill 是 Claude Code 的扩展功能，类似于手机 App。安装后可以通
 
 ### 9.5 搜索 Skill 的 Skill
 
-使用 `/skills search <关键词>` 可以搜索可用的 Skills。
+除了命令行搜索，还可以通过网页端浏览和发现更多 Skills。
 
-例如，搜索学术相关的 Skill：
-```
-> /skills search academic
-```
+**Skill 市场网址：** https://skills.sh/
 
-### 9.6 本工作流推荐的 Skills
+该网站汇集了大量社区贡献的 Skills，可以按分类浏览、查看安装量排名和评价。
 
-| Skill | 用途 | 调用方式 |
-|-------|------|---------|
-| brainstorming | 论文构思（阶段一） | Claude Code |
-| academic-paper-reviewer | 论文评审润色（阶段五） | Claude Code |
-| pptx | PPT 制作（阶段七） | Claude Code |
-| pdf | PDF 处理（润色时） | Claude Code |
-| docx | Word 文档处理（润色时） | Claude Code |
+### 9.6 用自然语言搜索和安装 Skills（推荐）
 
-### 9.7 安装推荐的 Skills
+`find-skills` 是 vercel-labs 贡献的社区 Skill（1M+ 安装量），安装后可以让你用自然语言搜索和安装其他 Skills，**无需记忆命令**。
+
+#### 第一步：安装 find-skills Skill
+
+**方法一：在 Claude Code 中直接说**
 
 ```
-/skills add brainstorming
-/skills add academic-paper-reviewer
-/skills add pptx
-/skills add pdf
-/skills add docx
+请帮我安装 find-skills Skill
 ```
+
+**方法二：用 npm 命令手动安装**
+
+```bash
+npx skills add vercel-labs/skills@find-skills -g -y
+```
+
+> 注意：必须写完整的包名 `vercel-labs/skills@find-skills`，不能只写 `find-skills`，否则会安装失败。
+
+#### 第二步：用自然语言搜索和安装其他 Skills
+
+安装完成后，在 Claude Code 中直接用自然语言告诉它你需要什么，例如：
+
+```
+> 我需要做 PPT，请帮我找一个适合制作毕业答辩 PPT 的 Skill，并帮我安装
+```
+
+```
+> 帮我找一个能处理 Word 文档（.docx）的 Skill，然后安装它
+```
+
+```
+> 帮我搜索并安装一个可以用来检查学术论文格式的 Skill
+```
+
+`find-skills` 会自动调用 https://skills.sh/ 的搜索功能，返回符合需求的 Skill 列表，帮你完成安装。
+
+### 9.7 用自然语言一键安装本工作流所需 Skills
+
+安装好 `find-skills` 后，在 Claude Code 中直接复制粘贴以下自然语言指令即可批量安装：
+
+**一次性安装全部（推荐）：**
+```
+> 请帮我用 /find skill 安装以下 Skills：brainstorming、academic-paper-reviewer、pptx、pdf、docx
+```
+
+**分开安装（更容易理解）：**
+```
+> 请用 /find skill 帮我安装一个叫 brainstorming 的 Skill，用于论文构思
+> 请用 /find skill 帮我安装 academic-paper-reviewer，用于论文评审润色
+> 请用 /find skill 帮我安装 pptx，用于制作毕业答辩 PPT
+> 请用 /find skill 帮我安装 pdf，用于处理 PDF 文献
+> 请用 /find skill 帮我安装 docx，用于处理 Word 文档
+```
+
+安装完成后用 `/skills list` 确认结果即可。
 
 安装后，每个 Skill 的详细使用方法会在工作流对应阶段介绍。
 
@@ -596,7 +633,7 @@ Skill 是 Claude Code 的扩展功能，类似于手机 App。安装后可以通
 
 ---
 
-## 10.5 基础使用示例
+### 10.5 基础使用示例
 
 ### 示例 1：让 Claude Code 了解你的项目
 
