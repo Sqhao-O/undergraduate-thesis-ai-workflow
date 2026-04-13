@@ -1,40 +1,40 @@
 # 01 - Claude Code 详细配置教程
 
-> 📌 **适用人群：** 从未使用过 Claude Code 的初学者  
-> ⏱️ **预计耗时：** 20-30 分钟
+> **适用人群：** 从未使用过 Claude Code 的初学者
+> **预计耗时：** 20-30 分钟
 
-> 🔙 **返回** <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">📑 README 主文档 →</a> | 如需概览和快速开始，点击链接
+> 返回 <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">README 主文档</a> | 如需概览和快速开始，点击链接
 
 ---
 
 ## 目录
 
 1. [Claude Code 是什么？](#claude-code-是什么)
-2. [系统要求与前置依赖](#系统要求与前置依赖) 
-3. [安装 Git for Windows](#安装-git-for-windows) 
+2. [系统要求与前置依赖](#系统要求与前置依赖)
+3. [安装 Git for Windows](#安装-git-for-windows)
 4. [安装 Node.js](#安装-nodejs)
 5. [安装 Claude Code](#安装-claude-code)
 6. [验证安装成功](#验证安装成功)
 7. [首次启动与登录（可选）](#首次启动与登录可选)
 8. [跳过登录的方法](#跳过登录的方法)
-9. [Claude Code 常用指令大全](#claude-code-常用指令大全)
-10. [基础使用示例](#基础使用示例)
+9. [Claude Code Skills 系统](#claude-code-skills-系统)
+10. [Claude Code 常用指令大全](#claude-code-常用指令大全)
 11. [参考资源](#参考资源)
 
 ---
 
-## Claude Code 是什么？
+## 1. Claude Code 是什么？
 
 **Claude Code** 是 Anthropic 公司推出的一款 **AI 编程 Agent（智能体）**。它运行在终端（命令行）中，可以通过自然语言对话来：
 
-- ✅ 读取和理解你的项目代码
-- ✅ 创建、修改、删除文件
-- ✅ 执行终端命令（编译、运行、测试等）
-- ✅ 搜索和替换代码
-- ✅ 调试和修复 Bug
-- ✅ 解释复杂代码逻辑
+- 读取和理解你的项目代码
+- 创建、修改、删除文件
+- 执行终端命令（编译、运行、测试等）
+- 搜索和替换代码
+- 调试和修复 Bug
+- 解释复杂代码逻辑
 
-### 与普通聊天 AI 的区别
+### 1.1 与普通聊天 AI 的区别
 
 | 特性 | 普通 AI 聊天 | Claude Code |
 |------|-------------|-------------|
@@ -46,11 +46,11 @@
 
 ---
 
-## 系统要求与前置依赖 ⭐
+## 2. 系统要求与前置依赖
 
 > **参考来源：** [Claude Code 官方文档 - 高级设置](https://code.claude.com/docs/zh-CN/setup) | [2.1 系统要求与环境准备](https://claudecode.tangshuang.net/tutorial/2.1%20%E7%B3%BB%E7%BB%9F%E8%A6%81%E6%B1%82%E4%B8%8E%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87)
 
-### 完整的系统要求
+### 2.1 完整的系统要求
 
 | 项目 | 要求 |
 |------|------|
@@ -59,17 +59,17 @@
 | **网络** | 需要能访问 API 服务（或配置代理） |
 | **Shell** | PowerShell、CMD 或 Git Bash |
 
-### ⚠️ 前置依赖清单（必须全部安装！）
+### 2.2 前置依赖清单（必须全部安装！）
 
 在安装 Claude Code 之前，你**必须**先安装以下工具：
 
 | # | 工具 | 是否必须 | 用途 | 安装顺序 |
 |---|------|---------|------|----------|
-| 1 | **Git for Windows** | ✅ **Windows 必装** | Claude Code 内部使用 Git Bash 运行命令 | **最先安装** |
-| 2 | **Node.js** | ✅ 必须安装 | Claude Code 的运行环境（npm 安装方式需要） | 第二个安装 |
-| 3 | Claude Code | ✅ 目标工具 | AI 编程 Agent | 最后安装 |
+| 1 | **Git for Windows** | **Windows 必装** | Claude Code 内部使用 Git Bash 运行命令 | **最先安装** |
+| 2 | **Node.js** | 必须安装 | Claude Code 的运行环境（npm 安装方式需要） | 第二个安装 |
+| 3 | Claude Code | 目标工具 | AI 编程 Agent | 最后安装 |
 
-### 🔴 为什么 Windows 用户必须装 Git？
+### 2.3 为什么 Windows 用户必须装 Git？
 
 根据 [Claude Code 官方文档](https://code.claude.com/docs/zh-CN/setup) 的说明：
 
@@ -79,11 +79,11 @@
 
 ---
 
-## 安装 Git for Windows ⭐
+## 3. 安装 Git for Windows
 
 这是安装 Claude Code 的**第一步**，请务必完成！
 
-### 步骤一：下载 Git 安装包
+### 3.1 步骤一：下载 Git 安装包
 
 1. 打开浏览器，访问 Git 官方下载页面：
 
@@ -93,17 +93,17 @@
 3. 点击 **64-bit Git for Windows Setup** （除非你是 32 位系统才选 32-bit）
 4. 下载得到 `.exe` 安装包（如 `Git-2.x.x-64-bit.exe`）
 
-> 💡 **什么是 Git？**  
-> Git 是一个**版本控制工具**，程序员用它来管理代码的历史版本。Claude Code 内部依赖 Git 来执行命令行操作，所以即使你不打算用 Git 管理代码版本，也必须安装它。
+> 什么是 Git？
+> Git 是一个版本控制工具，程序员用它来管理代码的历史版本。Claude Code 内部依赖 Git 来执行命令行操作，所以即使你不打算用 Git 管理代码版本，也必须安装它。
 
-### 步骤二：运行安装程序
+### 3.2 步骤二：运行安装程序
 
 1. 双击下载的 `.exe` 文件
 2. 如果弹出用户账户控制提示，点击 **「是」**
 3. 出现安装向导后，**大部分选项直接点 Next（下一步）即可**
 4. 以下几处需要注意的选项（其他保持默认）：
 
-#### 关键选项说明
+#### 3.2.1 关键选项说明
 
 ```
 第 1 步：许可证协议 → Next
@@ -111,12 +111,12 @@
 第 3 步：选择组件 → 全部默认勾选 → Next
 第 4 步：开始菜单文件夹名 → 默认 "Git" → Next
 
-⭐ 第 5 步：选择默认编辑器
+第 5 步：选择默认编辑器
    → 选择 "Vim"（默认）
    → 如果你不会 Vim，也可以选 "Notepad"
    → 不影响后续使用 → Next
 
-⭐ 第 6 步：决定初始化新仓库(仓库)的分支名称
+第 6 步：决定初始化新仓库(仓库)的分支名称
    → 保持默认 "Let Git decide"（会使用 main 分支）→ Next
 
 第 7 步：调整你的 PATH 环境
@@ -134,9 +134,9 @@
 第 11~15 步：全部默认 → Next ... → Install
 ```
 
-> 💡 **最关键的是第 7 步（PATH 配置），务必选择让第三方软件也能使用 Git！**
+> 最关键的是第 7 步（PATH 配置），务必选择让第三方软件也能使用 Git！
 
-### 步骤三：验证 Git 安装成功 ✅
+### 3.3 步骤三：验证 Git 安装成功
 
 打开终端（PowerShell），输入：
 
@@ -150,9 +150,9 @@ git --version
 git version 2.47.1
 ```
 
-> 🎉 **如果看到 `git version x.xx.x` 格式的版本号，说明 Git 安装成功！**
+> 如果看到 `git version x.xx.x` 格式的版本号，说明 Git 安装成功！
 
-### 步骤四：验证 Git 路径可用
+### 3.4 步骤四：验证 Git 路径可用
 
 再输入以下命令，确认 Git 已加入系统 PATH（Claude Code 需要找到 Git Bash）：
 
@@ -168,17 +168,17 @@ C:\Program Files\Git\cmd\git.exe
 
 只要能看到路径就说明 PATH 配置正确。
 
-> 💡 如果 `where` 命令不可用，也可以用 PowerShell 的 `Get-Command git` 替代。
+> 如果 `where` 命令不可用，也可以用 PowerShell 的 `Get-Command git` 替代。
 
-### Git 安装失败排查
+### 3.5 Git 安装失败排查
 
 如果安装后 `git --version` 提示找不到：
 
 | 尝试顺序 | 操作 |
 |---------|------|
-| 1️⃣ | **关闭终端，重新打开一个新窗口**再试 |
-| 2️⃣ | **重启电脑**后再试 |
-| 3️⃣ | 手动添加 PATH（管理员 PowerShell 运行）：<br>`[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Git\cmd", "User")`<br>然后重启终端 |
+| 1 | **关闭终端，重新打开一个新窗口**再试 |
+| 2 | **重启电脑**后再试 |
+| 3 | 手动添加 PATH（管理员 PowerShell 运行）：<br>`[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Git\cmd", "User")`<br>然后重启终端 |
 
 ---
 
@@ -192,11 +192,11 @@ C:\Program Files\Git\cmd\git.exe
 
 ---
 
-## 安装 Node.js
+## 4. 安装 Node.js
 
 Claude Code 基于 Node.js 开发，所以需要先安装 Node.js。
 
-### 步骤一：下载安装包
+### 4.1 步骤一：下载安装包
 
 1. 打开浏览器，访问 **https://nodejs.org/**
 2. 点击页面上方醒目的 **LTS** 版本下载按钮（推荐长期支持版）
@@ -213,7 +213,7 @@ Claude Code 基于 Node.js 开发，所以需要先安装 Node.js。
 6. 点击 **Install**（开始安装）
 7. 等待安装完成，点击 **Finish**
 
-### 步骤三：验证 Node.js 安装
+### 4.2 步骤三：验证 Node.js 安装
 
 打开终端（PowerShell），输入：
 
@@ -231,17 +231,17 @@ npm --version
 
 应该看到类似 `10.x.x` 的版本号。
 
-> 💡 **如果提示"不是内部或外部命令"：**
+> 如果提示"不是内部或外部命令"：
 > - 关闭终端，重新打开一个新窗口再试
 > - 如果还不行，重启电脑后再试
 
 ---
 
-## 安装 Claude Code
+## 5. 安装 Claude Code
 
 Node.js 和 npm 都就绪后，就可以安装 Claude Code 了。
 
-### 安装命令
+### 5.1 安装命令
 
 在终端中输入：
 
@@ -258,24 +258,24 @@ npm install -g @anthropic-ai/claude-code
 | `-g` | global，表示全局安装（在任何目录都能使用） |
 | `@anthropic-ai/claude-code` | Claude Code 的包名 |
 
-### 安装过程可能出现的提示
+### 5.2 安装过程可能出现的提示
 
 安装过程中 npm 可能会询问一些问题：
 
 - **`Do you want to continue? (y)` → 输入 `y` 回车**
 - 如果有权限警告，可以忽略（或用管理员身份运行 PowerShell）
 
-### 安装完成标志
+### 5.3 安装完成标志
 
 当终端回到正常提示符状态（没有错误信息），说明安装完成了！
 
 ---
 
-## 验证安装成功
+## 6. 验证安装成功
 
 完成所有安装后，请在终端中**依次运行以下三条验证命令**，确保每个工具都正确安装：
 
-### ① 验证 Git
+### 6.1 ① 验证 Git
 
 ```bash
 git --version
@@ -283,7 +283,7 @@ git --version
 
 预期输出：`git version 2.x.x`
 
-### ② 验证 Node.js
+### 6.2 ② 验证 Node.js
 
 ```bash
 node --version
@@ -299,7 +299,7 @@ npm --version
 
 预期输出：`10.x.x` 或类似版本号
 
-### ③ 验证 Claude Code
+### 6.3 ③ 验证 Claude Code
 
 ```bash
 claude --version
@@ -311,7 +311,7 @@ claude --version
 @anthropic-ai/claude-code/1.0.12 ...
 ```
 
-### ✅ 全部通过检查表
+### 6.4 全部通过检查表
 
 | # | 命令 | 预期结果 | 通过？ |
 |---|------|---------|--------|
@@ -320,18 +320,18 @@ claude --version
 | 3 | `npm --version` | 版本号正常显示 | ☐ |
 | 4 | `claude --version` | claude-code 版本号 | ☐ |
 
-> 🎉 **如果以上 4 条命令全部正常返回版本号，说明环境配置完美！可以开始使用 Claude Code 了！**
+> 如果以上 4 条命令全部正常返回版本号，说明环境配置完美！可以开始使用 Claude Code 了！
 
-> ⚠️ **如果任何一条报错：**
+> 如果任何一条报错：
 > - `git` 找不到 → 回到上方「Git 安装失败排查」章节
 > - `node` / `npm` 找不到 → 关闭终端重开，或重启电脑
 > - `claude` 找不到 → 确认 Node.js 和 npm 正常后重新运行安装命令
 
 ---
 
-## 首次启动与登录（可选）
+## 7. 首次启动与登录（可选）
 
-### 方法一：官方登录（需要 Anthropic 账号）
+### 7.1 方法一：官方登录（需要 Anthropic 账号）
 
 如果你有 Anthropic 账号或 API Key：
 
@@ -342,19 +342,19 @@ claude --version
 2. 按照提示登录或输入 API Key
 3. 登录后即可开始使用
 
-### 方法二：使用第三方 API（推荐国内用户）
+### 7.2 方法二：使用第三方 API（推荐国内用户）
 
 通过 CC Switch 配置其他 API 服务商（如 DeepSeek、MiniMax、Kimi 等），详见 <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">🔑 CC Switch 配置教程 →</a>。
 
 ---
 
-## 跳过登录的方法
+## 8. 跳过登录的方法
 
 如果你暂时不想登录，或者想先体验一下界面，可以用这个方法跳过初始设置向导。
 
-### 操作步骤
+### 8.1 操作步骤
 
-#### 1. 找到配置文件的存储位置
+#### 8.1.1 找到配置文件的存储位置
 
 Claude Code 的配置文件存放在你的**用户主目录**下：
 
@@ -369,7 +369,7 @@ Claude Code 的配置文件存放在你的**用户主目录**下：
 C:\Users\LENOVO\.claude.json
 ```
 
-#### 2. 打开文件夹
+#### 8.1.2 打开文件夹
 
 **方法 A — 通过文件资源管理器：**
 
@@ -390,11 +390,11 @@ explorer C:\Users\LENOVO
 
 1. 在文件资源管理器中，点击顶部菜单栏的 **「查看」**选项卡
 2. 找到 **「显示」** 区域
-3. ✅ 勾选 **「隐藏的项目」**
+3. 勾选「隐藏的项目」
 
 现在你应该能看到 `.claude.json` 文件了。
 
-#### 4. 用记事本编辑文件
+#### 8.1.4 用记事本编辑文件
 
 1. **右键点击** `.claude.json`
 2. 选择 **「打开方式」** → **「记事本」**
@@ -404,13 +404,13 @@ explorer C:\Users\LENOVO
 
 ```json
 {
-  "changelogLastFetched": 1775491529999
+  "lastOnboardingVersion": "1.0.0"
 }
 ```
 
-#### 5. 修改文件内容
+#### 8.1.5 修改文件内容
 
-⚠️ **JSON 格式非常严格，请务必仔细操作！**
+JSON 格式非常严格，请务必仔细操作！
 
 **修改规则：**
 
@@ -426,7 +426,7 @@ explorer C:\Users\LENOVO
 
 ```json
 {
-  "changelogLastFetched": 1770539699999,
+  "changelogLastFetched": 177053969××××,
   "hasCompletedOnboarding": true
 }
 ```
@@ -436,23 +436,89 @@ explorer C:\Users\LENOVO
 1. 按 `Ctrl + S` 保存（或点击"文件" → "保存"）
 2. 关闭记事本
 
-> ⚠️ **常见错误提醒：**
-> - ❌ 不要用中文逗号 `，`，必须是英文逗号 `,`
-> - ❌ 不要漏掉引号 `"hasCompletedOnboarding"`
-> - ❌ 不要多加或少加大括号 `{ }`
-> - ✅ 如果你不确定是否改对，可以复制上面的示例直接覆盖原内容
+> 常见错误提醒：
+> - 不要用中文逗号 `，`，必须是英文逗号 `,`
+> - 不要漏掉引号 `"hasCompletedOnboarding"`
+> - 不要多加或少加大括号 `{ }`
+> - 如果你不确定是否改对，可以复制上面的示例直接覆盖原内容
 
-#### 7. 验证跳过成功
+#### 8.1.7 验证跳过成功
 
 现在再次在终端输入 `claude`，应该会跳过登录向导，直接进入对话界面！
 
 ---
 
-## Claude Code 常用指令大全
+## 9. Claude Code Skills 系统
+
+### 9.1 什么是 Skill？
+
+Skill 是 Claude Code 的扩展功能，类似于手机 App。安装后可以通过 `/skills` 命令调用，扩展 Claude Code 的能力。
+
+### 9.2 系统级 Skill vs 文件夹级 Skill
+
+| 类型 | 存放位置 | 适用范围 |
+|------|----------|----------|
+| **系统级** | `~/.claude/skills/` | 所有项目都可以使用 |
+| **文件夹级** | `.claude/skills/` | 仅当前项目可用 |
+
+### 9.3 Skill 存放位置
+
+| 系统 | 路径 |
+|------|------|
+| Windows | `C:\Users\<用户名>\.claude\skills\` |
+| macOS / Linux | `~/.claude/skills/` |
+
+配置文件位置：`C:\Users\<用户名>\.claude\settings.json`
+
+### 9.4 下载和管理 Skill
+
+在 Claude Code 中使用以下命令：
+
+| 命令 | 说明 |
+|------|------|
+| `/skills list` | 查看已安装的 Skills |
+| `/skills add <name>` | 添加指定 Skill |
+| `/skills remove <name>` | 移除指定 Skill |
+| `/skills update` | 更新所有 Skills |
+
+### 9.5 搜索 Skill 的 Skill
+
+使用 `/skills search <关键词>` 可以搜索可用的 Skills。
+
+例如，搜索学术相关的 Skill：
+```
+> /skills search academic
+```
+
+### 9.6 本工作流推荐的 Skills
+
+| Skill | 用途 | 调用方式 |
+|-------|------|---------|
+| brainstorming | 论文构思（阶段一） | Claude Code |
+| academic-paper-reviewer | 论文评审润色（阶段五） | Claude Code |
+| pptx | PPT 制作（阶段七） | Claude Code |
+| pdf | PDF 处理（润色时） | Claude Code |
+| docx | Word 文档处理（润色时） | Claude Code |
+
+### 9.7 安装推荐的 Skills
+
+```
+/skills add brainstorming
+/skills add academic-paper-reviewer
+/skills add pptx
+/skills add pdf
+/skills add docx
+```
+
+安装后，每个 Skill 的详细使用方法会在工作流对应阶段介绍。
+
+---
+
+## 10. Claude Code 常用指令大全
 
 进入 Claude Code 后（看到 `>` 提示符后），可以使用以下**斜杠指令**：
 
-### 📋 基础指令
+### 9.1 基础指令
 
 | 指令 | 快捷键 | 说明 |
 |------|--------|------|
@@ -460,7 +526,7 @@ explorer C:\Users\LENOVO
 | `/exit` | — | 退出 Claude Code |
 | `/quit` | — | 同 `/exit` |
 
-### 🧹 上下文管理
+### 9.1.1 上下文管理
 
 | 指令 | 说明 |
 |------|------|
@@ -468,7 +534,7 @@ explorer C:\Users\LENOVO
 | `/compact` | 压缩当前对话，保留关键信息，释放 token 空间 |
 | `/clear conversation` | 仅清空对话记录 |
 
-### 📁 项目操作
+### 9.2 项目操作
 
 | 指令 | 说明 |
 |------|------|
@@ -477,7 +543,7 @@ explorer C:\Users\LENOVO
 | `/memory` | 查看 Claude Code 的记忆文件 |
 | `/memory edit` | 编辑记忆文件（告诉 Claude Code 项目特定的规则） |
 
-### 🔧 工具权限
+### 9.3 工具权限
 
 | 指令 | 说明 |
 |------|------|
@@ -486,9 +552,9 @@ explorer C:\Users\LENOVO
 | `/deny` | 禁止某个操作 |
 | `/reset-permissions` | 重置所有权限设置 |
 
-### 📝 实用技巧
+### 9.4 实用技巧
 
-#### 技巧 1：让 Claude Code 记住项目规范
+#### 9.4.1 技巧 1：让 Claude Code 记住项目规范
 
 使用 `/memory edit` 可以编辑项目的"记忆"，比如：
 
@@ -500,7 +566,7 @@ explorer C:\Users\LENOVO
 
 这样 Claude Code 在后续对话中就会遵循这些规范。
 
-#### 技巧 2：清空上下文重新开始
+#### 9.4.2 技巧 2：清空上下文重新开始
 
 当你发现 Claude Code "忘记"了之前的约定，或者上下文太混乱时：
 
@@ -510,9 +576,9 @@ explorer C:\Users\LENOVO
 
 这会清空对话历史但保留项目文件信息，相当于"翻篇不翻书"。
 
-#### 技巧 3：直接给任务而不是闲聊
+#### 9.4.3 技巧 3：直接给任务而不是闲聊
 
-❌ 不好的用法：
+不好的用法：
 ```
 > 你好
 > 我想写个程序
@@ -520,7 +586,7 @@ explorer C:\Users\LENOVO
 > 用Python写
 ```
 
-✅ 好的用法：
+好的用法：
 ```
 > 请帮我读取 src/main.py 文件，然后在其中实现一个图像灰度化函数，
   要求使用 OpenCV 库，函数名为 grayscale(image_path)，
@@ -566,23 +632,23 @@ claude
 
 ---
 
-## 参考资源
+## 11. 参考资源
 
 以下是学习 Claude Code 的优质资源：
 
-### 官方资源
+### 11.1 官方资源
 
 - **Claude Code 官方文档：** https://docs.anthropic.com/en/docs/claude-code
 - **Anthropic 官网：** https://www.anthropic.com/
 
-### 中文教程
+### 11.2 中文教程
 
 | 教程 | 链接 | 说明 |
 |------|------|------|
 | Claude Code 中文指南 | https://claudecode.tangshuang.net/ | 非常详尽的中文入门指南，从安装到高级技巧全覆盖 |
 | Claude Code 实战 | https://cholf5.com/claude-code-in-action/index.html | 实战案例导向的教程，适合边学边做 |
 
-### 社区资源
+### 11.3 社区资源
 
 - **Reddit：** r/ClaudeCode
 - **Discord：** Anthropic Discord 服务器
@@ -612,7 +678,7 @@ claude
 
 ### Q: 不装 Git 可以用 Claude Code 吗？
 
-**A:** ❌ **Windows 上不可以。** 根据 [Claude Code 官方文档](https://code.claude.com/docs/zh-CN/setup) 明确要求："Windows 上的 Claude Code 需要 Git for Windows 或 WSL"。Claude Code 内部使用 Git Bash 来执行命令，没有 Git 就无法运行。macOS/Linux 用户通常系统自带 Git，一般不需要额外安装。
+**A:** Windows 上不可以。根据 [Claude Code 官方文档](https://code.claude.com/docs/zh-CN/setup) 明确要求："Windows 上的 Claude Code 需要 Git for Windows 或 WSL"。Claude Code 内部使用 Git Bash 来执行命令，没有 Git 就无法运行。macOS/Linux 用户通常系统自带 Git，一般不需要额外安装。
 
 ### Q: Git 和 GitHub 是一回事吗？
 
@@ -630,27 +696,27 @@ claude
 
 ---
 
-> 💡 **下一步：** 学习如何使用 CC Switch 配置 API 密钥 → <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">🔑 CC Switch 配置教程 →</a>
+> 下一步：学习如何使用 CC Switch 配置 API 密钥 → <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">CC Switch 配置教程</a>
 
 ---
 
-## 📖 文档导航 {#文档导航}
+## 文档导航
 
-> 📍 **当前位置：第 1 篇 / 共 6 篇**（含 README）
+> **阅读进度：第 2 篇 / 共 6 篇**
 
-### 🔗 快速跳转
-
-| ⬅️ **上一篇** | 🔵 **当前位置** | **下一篇 ➡️** |
-|:---:|:---:|:---:|
-| <a href="../README.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📄 README.md</a> | **📘 01-claude-code-setup.md**<br><small>Git + Node.js + Claude Code 安装配置</small> | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #0969da; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📗 下一篇 →</a><br><small>CC Switch 配置 API 密钥</small> |
-
-### 📑 全部文档索引
+### 阅读进度
 
 | # | 文档 | 状态 |
 |---|------|------|
-| 0 | <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📄 README 主文档 →</a> | ✅ 已读完 |
-| **1** | **📘 01-claude-code-setup.md** | ✅ **当前阅读中** |
-| 2 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📗 开始阅读 →</a> | ⬅️ 接下来读 |
-| 3 | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📙 开始阅读 →</a> | ☐ 待阅读 |
-| 4 | <a href="./04-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📕 开始阅读 →</a> | ☐ 待阅读 |
-| 5 | <a href="./05-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">📔 开始阅读 →</a> | ☐ 待阅读 |
+| 1 | <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">README 主文档</a> | 已读完 |
+| **2** | **01 Claude Code 配置** | 当前阅读中 |
+| 3 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">02 CC Switch 配置</a> | 接下来读 |
+| 4 | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">03 Pandoc 使用</a> | 待阅读 |
+| 5 | <a href="./04-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">04 完整工作流</a> | 待阅读 |
+| 6 | <a href="./05-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">05 WorkBuddy 排版</a> | 待阅读 |
+
+### 上一篇 / 下一篇
+
+| 上一篇 | 下一篇 |
+|:---:|:---:|
+| <a href="../README.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">1 README 主文档</a> | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #0969da; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">3  CC Switch 配置</a> |

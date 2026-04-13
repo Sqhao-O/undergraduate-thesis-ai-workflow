@@ -1,57 +1,21 @@
-Creative Commons Attribution 4.0 International (CC BY 4.0)
+MIT License
 
-=======================================================================
+Copyright (c) 2024 本科毕业论文 AI 辅助工作流
 
-本工作（"本科毕业论文 AI 辅助工作流"文档）采用 Creative Commons 
-Attribution 4.0 International (CC BY 4.0) 许可证授权。
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-您可自由地：
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-  共享 — 在任何媒介以任何形式复制、发行本作品
-  演绎 — 修改、转换或以本作品为基础进行创作
-      惟须遵守以下条款：
-
-  署名 — 您必须给出适当的署名，
-        提供指向本许可协议的链接，
-        并且指示是否对原作品进行了修改。
-        您可以用任何合理的方式来署名，
-        但是不得以任何方式暗示许可方认可您或您的使用。
-
-  无附加限制 — 您不得适用法律术语或者
-              技术措施从而限制其他人做
-              许可协议允许的法律行为。
-
-=======================================================================
-
-完整许可证文本：
-
-Creative Commons Corporation ("Creative Commons") regularly publishes
-and maintains the legal tools collectively named "Creative Commons
-Public License Terms" or "CC PLT" on its website, currently located
-at the address:
-
-    https://creativecommons.org/licenses/
-
-We advise you to read the full legal text of the specific CC license
-you are interested in at the above URL.
-
-The official Chinese translation of CC BY 4.0 is available at:
-
-    https://creativecommons.org/licenses/by/4.0/deed.zh-Hans
-
-The full legal code is available at:
-
-    https://creativecommons.org/licenses/by/4.0/legalcode
-
-======================================================================
-
-Third-Party Content Disclaimer
-
-This license applies to the documentation content created by the authors
-of this project ("本科毕业论文 AI 辅用工作流"). 
-
-Third-party tools, software, and resources mentioned in this document
-are governed by their respective licenses and are not covered by this
-CC BY 4.0 license. Please refer to CREDITS.md for details.
-
-======================================================================
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
