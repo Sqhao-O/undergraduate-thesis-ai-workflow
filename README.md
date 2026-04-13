@@ -545,7 +545,7 @@ claude
 .
 ├── README.md                    # 主文档（你正在看的这个）
 ├── CREDITS.md                   # 致谢与许可证清单
-├── LICENSE                      # CC BY 4.0 许可证
+├── LICENSE                      # MIT 许可证
 └── docs/
     ├── 01-claude-code-setup.md  # Claude Code 详细配置教程
     ├── 02-cc-switch-guide.md    # CC Switch 配置密钥指南
@@ -558,7 +558,7 @@ claude
 
 ## 9. 许可证
 
-本项目采用 **Creative Commons Attribution 4.0 International (CC BY 4.0)** 许可证发布。
+本项目采用 **MIT License** 许可证发布。
 
 详见 [LICENSE](LICENSE) 文件。
 
@@ -569,7 +569,7 @@ claude
 </p>
 
 <p align="center">
-  本项目采用 Creative Commons Attribution 4.0 International (CC BY 4.0) 许可证发布。
+  本项目采用 MIT License 许可证发布。
 </p>
 
 ---

@@ -411,8 +411,8 @@ CC Switch 统一管理以下 5 个 AI 编程工具的配置：
 | 2 | <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">01 Claude Code 配置</a> | 已读完 |
 | **3** | **02 CC Switch 配置** | 当前阅读中 |
 | 4 | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">03 Pandoc 使用</a> | 接下来读 |
-| 5 | <a href="./04-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">04 完整工作流</a> | 待阅读 |
-| 6 | <a href="./05-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">05 WorkBuddy 排版</a> | 待阅读 |
+| 5 | <a href="./04-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">04 WorkBuddy 排版</a> | 待阅读 |
+| 6 | <a href="./05-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">05 完整工作流</a> | 待阅读 |
 
 ### 上一篇 / 下一篇
 

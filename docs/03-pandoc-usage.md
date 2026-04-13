@@ -567,11 +567,11 @@ pandoc thesis.md -o thesis.docx --reference-doc=template.docx
 | 2 | <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">01 Claude Code 配置</a> | 已读完 |
 | 3 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">02 CC Switch 配置</a> | 已读完 |
 | **4** | **03 Pandoc 使用** | 当前阅读中 |
-| 5 | <a href="./04-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">04 完整工作流</a> | 接下来读 |
-| 6 | <a href="./05-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">05 WorkBuddy 排版</a> | 待阅读 |
+| 5 | <a href="./04-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">04 WorkBuddy 排版</a> | 接下来读 |
+| 6 | <a href="./05-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">05 完整工作流</a> | 待阅读 |
 
 ### 上一篇 / 下一篇
 
 | 上一篇 | 下一篇 |
 |:---:|:---:|
-| <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">3 02 CC Switch 配置</a> | <a href="./04-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #0969da; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">5 04 完整工作流</a> |
+| <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">3 02 CC Switch 配置</a> | <a href="./04-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #0969da; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">4 04 WorkBuddy 排版</a> |

@@ -19,7 +19,8 @@
 8. [跳过登录的方法](#跳过登录的方法)
 9. [Claude Code Skills 系统](#claude-code-skills-系统)
 10. [Claude Code 常用指令大全](#claude-code-常用指令大全)
-11. [参考资源](#参考资源)
+11. [基础使用示例](#基础使用示例)
+12. [参考资源](#参考资源)
 
 ---
 
@@ -203,7 +204,7 @@ Claude Code 基于 Node.js 开发，所以需要先安装 Node.js。
    - LTS = Long Term Support（长期支持版本），更稳定
 3. 下载得到 `.msi` 安装包（Windows 系统）
 
-### 步骤二：运行安装程序
+### 4.2 步骤二：运行安装程序
 
 1. 双击下载的 `.msi` 文件
 2. 点击 **Next**（下一步）
@@ -384,7 +385,7 @@ C:\Users\LENOVO\.claude.json
 explorer C:\Users\LENOVO
 ```
 
-#### 3. 显示隐藏文件
+#### 8.1.3 显示隐藏文件
 
 `.claude.json` 是一个**隐藏文件**（文件名以点开头），你需要先启用"显示隐藏文件"：
 
@@ -431,7 +432,7 @@ JSON 格式非常严格，请务必仔细操作！
 }
 ```
 
-#### 6. 保存并关闭
+#### 8.1.6 保存并关闭
 
 1. 按 `Ctrl + S` 保存（或点击"文件" → "保存"）
 2. 关闭记事本
@@ -518,7 +519,7 @@ Skill 是 Claude Code 的扩展功能，类似于手机 App。安装后可以通
 
 进入 Claude Code 后（看到 `>` 提示符后），可以使用以下**斜杠指令**：
 
-### 9.1 基础指令
+### 10.1 基础指令
 
 | 指令 | 快捷键 | 说明 |
 |------|--------|------|
@@ -526,7 +527,7 @@ Skill 是 Claude Code 的扩展功能，类似于手机 App。安装后可以通
 | `/exit` | — | 退出 Claude Code |
 | `/quit` | — | 同 `/exit` |
 
-### 9.1.1 上下文管理
+### 10.1.1 上下文管理
 
 | 指令 | 说明 |
 |------|------|
@@ -534,7 +535,7 @@ Skill 是 Claude Code 的扩展功能，类似于手机 App。安装后可以通
 | `/compact` | 压缩当前对话，保留关键信息，释放 token 空间 |
 | `/clear conversation` | 仅清空对话记录 |
 
-### 9.2 项目操作
+### 10.2 项目操作
 
 | 指令 | 说明 |
 |------|------|
@@ -543,7 +544,7 @@ Skill 是 Claude Code 的扩展功能，类似于手机 App。安装后可以通
 | `/memory` | 查看 Claude Code 的记忆文件 |
 | `/memory edit` | 编辑记忆文件（告诉 Claude Code 项目特定的规则） |
 
-### 9.3 工具权限
+### 10.3 工具权限
 
 | 指令 | 说明 |
 |------|------|
@@ -552,9 +553,9 @@ Skill 是 Claude Code 的扩展功能，类似于手机 App。安装后可以通
 | `/deny` | 禁止某个操作 |
 | `/reset-permissions` | 重置所有权限设置 |
 
-### 9.4 实用技巧
+### 10.4 实用技巧
 
-#### 9.4.1 技巧 1：让 Claude Code 记住项目规范
+#### 10.4.1 技巧 1：让 Claude Code 记住项目规范
 
 使用 `/memory edit` 可以编辑项目的"记忆"，比如：
 
@@ -566,7 +567,7 @@ Skill 是 Claude Code 的扩展功能，类似于手机 App。安装后可以通
 
 这样 Claude Code 在后续对话中就会遵循这些规范。
 
-#### 9.4.2 技巧 2：清空上下文重新开始
+#### 10.4.2 技巧 2：清空上下文重新开始
 
 当你发现 Claude Code "忘记"了之前的约定，或者上下文太混乱时：
 
@@ -576,7 +577,7 @@ Skill 是 Claude Code 的扩展功能，类似于手机 App。安装后可以通
 
 这会清空对话历史但保留项目文件信息，相当于"翻篇不翻书"。
 
-#### 9.4.3 技巧 3：直接给任务而不是闲聊
+#### 10.4.3 技巧 3：直接给任务而不是闲聊
 
 不好的用法：
 ```
@@ -595,7 +596,7 @@ Skill 是 Claude Code 的扩展功能，类似于手机 App。安装后可以通
 
 ---
 
-## 基础使用示例
+## 10.5 基础使用示例
 
 ### 示例 1：让 Claude Code 了解你的项目
 
@@ -632,23 +633,23 @@ claude
 
 ---
 
-## 11. 参考资源
+## 12. 参考资源
 
 以下是学习 Claude Code 的优质资源：
 
-### 11.1 官方资源
+### 12.1 官方资源
 
 - **Claude Code 官方文档：** https://docs.anthropic.com/en/docs/claude-code
 - **Anthropic 官网：** https://www.anthropic.com/
 
-### 11.2 中文教程
+### 12.2 中文教程
 
 | 教程 | 链接 | 说明 |
 |------|------|------|
 | Claude Code 中文指南 | https://claudecode.tangshuang.net/ | 非常详尽的中文入门指南，从安装到高级技巧全覆盖 |
 | Claude Code 实战 | https://cholf5.com/claude-code-in-action/index.html | 实战案例导向的教程，适合边学边做 |
 
-### 11.3 社区资源
+### 12.3 社区资源
 
 - **Reddit：** r/ClaudeCode
 - **Discord：** Anthropic Discord 服务器
@@ -712,8 +713,8 @@ claude
 | **2** | **01 Claude Code 配置** | 当前阅读中 |
 | 3 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">02 CC Switch 配置</a> | 接下来读 |
 | 4 | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">03 Pandoc 使用</a> | 待阅读 |
-| 5 | <a href="./04-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">04 完整工作流</a> | 待阅读 |
-| 6 | <a href="./05-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">05 WorkBuddy 排版</a> | 待阅读 |
+| 5 | <a href="./04-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">04 WorkBuddy 排版</a> | 待阅读 |
+| 6 | <a href="./05-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">05 完整工作流</a> | 待阅读 |
 
 ### 上一篇 / 下一篇
 
