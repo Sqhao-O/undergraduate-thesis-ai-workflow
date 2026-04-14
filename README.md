@@ -403,8 +403,8 @@ https://b23.tv/aBf4B83
 
 #### 7.2.1 步骤一：用 Kimi Agent 编写需求文档
 
-1. 打开 Kimi https://kimi.moonshot.cn/
-2. 切换到 **Agent 模式**（如果有的话）
+1. 打开 Kimi网页或已经下载好的客户端 https://www.kimi.com/
+2. 切换到 **Agent 模式**
 3. 告诉 Kimi 你的毕业论文题目和要求
 4. 让它帮你整理成一份**结构化的 Markdown 需求文档**
 5. 包含：研究背景、技术路线、功能模块、预期成果等
@@ -656,8 +656,6 @@ claude
 | **6** | `05-workflow-guide.md` | 完整工作流 8 阶段图解 / Markdown写作规范 / 时间规划建议 | [开始阅读](./docs/05-workflow-guide.md) |
 
 ---
-
-### 开始阅读
 
 ### 开始阅读
 
