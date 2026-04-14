@@ -85,9 +85,7 @@
 
 ### 3.1 步骤一：下载 Git 安装包
 
-1. 打开浏览器，访问 Git 官方下载页面：
-
-   👉 **https://git-scm.com/downloads/win**
+1. 打开浏览器，访问 Git 官方下载页面： **https://git-scm.com/downloads/win**
 
 2. 页面会自动检测你的系统并推荐合适的版本
 3. 点击 **64-bit Git for Windows Setup** （除非你是 32 位系统才选 32-bit）
@@ -344,7 +342,7 @@ claude --version
 
 ### 7.2 方法二：使用第三方 API（推荐国内用户）
 
-通过 CC Switch 配置其他 API 服务商（如 DeepSeek、MiniMax、Kimi 等），详见 [🔑 CC Switch 配置教程](./02-cc-switch-guide.md)
+通过 CC Switch 配置其他 API 服务商（如 DeepSeek、MiniMax、Kimi 等），详见 [CC Switch 配置教程](./02-cc-switch-guide.md)
 
 ---
 
@@ -481,7 +479,7 @@ Skill 是 Claude Code 的扩展功能，类似于手机 App。安装后可以通
 | `/skills remove <name>` | 移除指定 Skill |
 | `/skills update` | 更新所有 Skills |
 
-### 9.5 搜索 Skill 的 Skill
+### 9.5 搜索 Skill
 
 除了命令行搜索，还可以通过网页端浏览和发现更多 Skills。
 
@@ -504,10 +502,8 @@ Skill 是 Claude Code 的扩展功能，类似于手机 App。安装后可以通
 **方法二：用 npm 命令手动安装**
 
 ```bash
-npx skills add vercel-labs/skills@find-skills -g -y
+npx skills add https://github.com/vercel-labs/skills --skill find-skills
 ```
-
-> 注意：必须写完整的包名 `vercel-labs/skills@find-skills`，不能只写 `find-skills`，否则会安装失败。
 
 #### 第二步：用自然语言搜索和安装其他 Skills
 
