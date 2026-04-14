@@ -3,23 +3,22 @@
 > **适用人群：** 需要管理多个 AI 编程工具 API 配置的用户
 > **预计耗时：** 15-20 分钟
 
-> 返回 <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">README 主文档</a> | 如需概览和快速开始，点击链接
+> [返回 README 主文档](../README.md#全部文档索引) | 如需概览和快速开始，点击链接
 
 ---
 
 ## 目录
 
-1. [CC Switch 是什么？](#cc-switch-是什么)
-2. [下载与安装](#下载与安装)
-3. [界面概览](#界面概览)
-4. [添加 Provider（API 服务商）](#添加-providerapi-服务商)
-5. [配置 API 密钥](#配置-api-密钥)
-6. [推荐的 API 服务商](#推荐的-api-服务商)
-7. [切换 API 配置](#切换-api-配置)
-8. [管理 MCP 服务器](#管理-mcp-服务器)
-9. [管理 Skills](#管理-skills)
-10. [支持的工具列表](#支持的工具列表)
-11. [常见问题](#常见问题)
+1. [CC Switch 是什么？](#1-cc-switch-是什么)
+2. [下载与安装](#2-下载与安装)
+3. [界面概览](#3-界面概览)
+4. [添加 Provider（API 服务商）](#4-添加-providerapi-服务商)
+5. [配置 API 密钥](#5-配置-api-密钥)
+6. [推荐的 API 服务商](#6-推荐的-api-服务商)
+7. [切换 API 配置](#7-切换-api-配置)
+8. [管理 MCP 服务器](#8-管理-mcp-服务器)
+9. [管理 Skills](#9-管理-skills)
+10. [常见问题](#10-常见问题)
 
 ---
 
@@ -407,15 +406,15 @@ CC Switch 统一管理以下 5 个 AI 编程工具的配置：
 
 | # | 文档 | 状态 |
 |---|------|------|
-| 1 | <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">README 主文档</a> | 已读完 |
-| 2 | <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">01 Claude Code 配置</a> | 已读完 |
+| 1 | [README 主文档](../README.md#全部文档索引) | 已读完 |
+| 2 | [01 Claude Code 配置](./01-claude-code-setup.md) | 已读完 |
 | **3** | **02 CC Switch 配置** | 当前阅读中 |
-| 4 | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">03 Pandoc 使用</a> | 接下来读 |
-| 5 | <a href="./04-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">04 WorkBuddy 排版</a> | 待阅读 |
-| 6 | <a href="./05-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">05 完整工作流</a> | 待阅读 |
+| 4 | [03 Pandoc 使用](./03-pandoc-usage.md) | 接下来读 |
+| 5 | [04 WorkBuddy 排版](./04-workbuddy-guide.md) | 待阅读 |
+| 6 | [05 完整工作流](./05-workflow-guide.md) | 待阅读 |
 
 ### 上一篇 / 下一篇
 
 | 上一篇 | 下一篇 |
 |:---:|:---:|
-| <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">2 01 Claude Code 配置</a> | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #0969da; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">4 03 Pandoc 使用</a> |
+| [2 01 Claude Code 配置](./01-claude-code-setup.md) | [4 03 Pandoc 使用](./03-pandoc-usage.md) |

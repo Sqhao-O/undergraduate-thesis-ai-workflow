@@ -3,21 +3,21 @@
 > **适用人群：** 需要将 Markdown 论文转换为 Word (DOCX) 格式的用户
 > **预计耗时：** 10-15 分钟（安装） + 5 分钟（学习基本使用）
 
-> 返回 <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">README 主文档</a> | 如需概览和快速开始，点击链接
+> [返回 README 主文档](../README.md#全部文档索引) | 如需概览和快速开始，点击链接
 
 ---
 
 ## 目录
 
-1. [Pandoc 是什么？](#pandoc-是什么)
-2. [安装 Pandoc](#安装-pandoc)
-3. [验证安装成功](#验证安装成功)
-4. [查看支持的格式](#查看支持的格式)
-5. [基本转换命令](#基本转换命令)
-6. [使用 Word 模板保持格式](#使用-word-模板保持格式)
-7. [高级选项与技巧](#高级选项与技巧)
-8. [Markdown 写作规范](#markdown-写作规范)
-9. [常见问题](#常见问题)
+1. [Pandoc 是什么？](#1-pandoc-是什么)
+2. [安装 Pandoc](#2-安装-pandoc)
+3. [验证安装成功](#3-验证安装成功)
+4. [查看支持的格式](#4-查看支持的格式)
+5. [基本转换命令](#5-基本转换命令)
+6. [使用 Word 模板保持格式](#6-使用-word-模板保持格式重要)
+7. [高级选项与技巧](#7-高级选项与技巧)
+8. [Markdown 写作规范](#8-markdown-写作规范)
+9. [常见问题](#9-常见问题)
 
 ---
 
@@ -100,7 +100,7 @@ sudo apt install pandoc
 
 ## 3. 验证安装成功
 
-安装完成后，打开终端（PowerShell / 命令提示符），输入以下命令进行验证。
+安装完成后，打开终端（CMD），输入以下命令进行验证。
 
 ### 3.1 命令一：查看版本号（必做）
 
@@ -546,6 +546,21 @@ pandoc thesis.md -o thesis.docx --reference-doc=template.docx
 ```
 然后用 Word 打开 DOCX → 文件 → 导出为 PDF。
 
+### Q: Pandoc转换后Word中文字体显示异常？
+
+**A:** 这是字体问题，解决方法：
+1. 在Word中手动修改字体
+2. 使用自定义模板指定中文字体
+3. 安装常用的中文字体（如宋体、黑体）
+
+### Q: Pandoc转换时提示"找不到文件"？
+
+**A:** 请检查：
+1. 文件路径是否正确
+2. 文件名是否正确（注意大小写）
+3. 是否在正确的目录下执行命令
+4. 使用 `dir`（CMD）查看当前目录下的文件
+
 ---
 
 > 相关链接：
@@ -563,15 +578,15 @@ pandoc thesis.md -o thesis.docx --reference-doc=template.docx
 
 | # | 文档 | 状态 |
 |---|------|------|
-| 1 | <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">README 主文档</a> | 已读完 |
-| 2 | <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">01 Claude Code 配置</a> | 已读完 |
-| 3 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">02 CC Switch 配置</a> | 已读完 |
+| 1 | [README 主文档](../README.md#全部文档索引) | 已读完 |
+| 2 | [01 Claude Code 配置](./01-claude-code-setup.md) | 已读完 |
+| 3 | [02 CC Switch 配置](./02-cc-switch-guide.md) | 已读完 |
 | **4** | **03 Pandoc 使用** | 当前阅读中 |
-| 5 | <a href="./04-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">04 WorkBuddy 排版</a> | 接下来读 |
-| 6 | <a href="./05-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">05 完整工作流</a> | 待阅读 |
+| 5 | [04 WorkBuddy 排版](./04-workbuddy-guide.md) | 接下来读 |
+| 6 | [05 完整工作流](./05-workflow-guide.md) | 待阅读 |
 
 ### 上一篇 / 下一篇
 
 | 上一篇 | 下一篇 |
 |:---:|:---:|
-| <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">3 02 CC Switch 配置</a> | <a href="./04-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #0969da; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">4 04 WorkBuddy 排版</a> |
+| [3 02 CC Switch 配置](./02-cc-switch-guide.md) | [4 04 WorkBuddy 排版](./04-workbuddy-guide.md) |

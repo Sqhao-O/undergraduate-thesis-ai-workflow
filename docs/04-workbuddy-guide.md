@@ -3,23 +3,23 @@
 > **适用人群：** 需要对论文进行精细化 AI 排版和格式检查的用户
 > **预计耗时：** 20-30 分钟（首次配置） + 10 分钟/每次排版
 
-> 返回 <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">README 主文档</a> | 如需概览和快速开始，点击链接
+> [返回 README 主文档](../README.md#全部文档索引) | 如需概览和快速开始，点击链接
 
 ---
 
 ## 目录
 
-1. [WorkBuddy 是什么？](#workbuddy-是什么)
-2. [安装与启动](#安装与启动)
-3. [Paper Check Skill 下载](#paper-check-skill-下载)
-4. [准备工作：组织文件结构](#准备工作组织文件结构)
-5. [初始化 Skill 并加载论文](#初始化-skill-并加载论文)
-6. [读取排版要求](#读取排版要求)
-7. [执行自动排版与检测](#执行自动排版与检测)
-8. [查看结果与导出](#查看结果与导出)
-9. [WorkBuddy vs Lark-Formatter 对比](#workbuddy-vs-lark-formatter-对比)
-10. [常见问题](#常见问题)
-11. [总结](#总结)
+1. [WorkBuddy 是什么？](#1-workbuddy-是什么)
+2. [安装与启动](#2-安装与启动)
+3. [Paper Check Skill 下载](#3-paper-check-skill-下载)
+4. [准备工作：组织文件结构](#4-准备工作组织文件结构)
+5. [初始化 Skill 并加载论文](#5-初始化-skill-并加载论文)
+6. [读取排版要求](#6-读取排版要求)
+7. [执行自动排版与检测](#7-执行自动排版与检测)
+8. [查看结果与导出](#8-查看结果与导出)
+9. [WorkBuddy vs Lark-Formatter 对比](#9-workbuddy-vs-lark-formatter-对比)
+10. [常见问题](#10-常见问题)
+11. [总结](#11-总结)
 
 ---
 
@@ -516,18 +516,18 @@ Markdown 论文
 
 | # | 文档 | 状态 |
 |---|------|------|
-| 1 | <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">README 主文档</a> | 已读完 |
-| 2 | <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">01 Claude Code 配置</a> | 已读完 |
-| 3 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">02 CC Switch 配置</a> | 已读完 |
-| 4 | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">03 Pandoc 使用</a> | 已读完 |
+| 1 | [README 主文档](../README.md#全部文档索引) | 已读完 |
+| 2 | [01 Claude Code 配置](./01-claude-code-setup.md) | 已读完 |
+| 3 | [02 CC Switch 配置](./02-cc-switch-guide.md) | 已读完 |
+| 4 | [03 Pandoc 使用](./03-pandoc-usage.md) | 已读完 |
 | **5** | **04 WorkBuddy 排版** | 当前阅读中 |
-| 6 | <a href="./05-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">05 完整工作流</a> | 最后一篇 |
+| 6 | [05 完整工作流](./05-workflow-guide.md) | 最后一篇 |
 
 ### 上一篇 / 下一篇
 
 | 上一篇 | 下一篇 |
 |:---:|:---:|
-| <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">3 03 Pandoc 使用</a> | <a href="./05-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #0969da; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">5 05 完整工作流</a> |
+| [3 03 Pandoc 使用](./03-pandoc-usage.md) | [5 05 完整工作流](./05-workflow-guide.md) |
 
 ---
 

@@ -3,25 +3,25 @@
 > **适用人群：** 想要了解从需求文档到最终排版全流程的用户
 > **预计耗时：** 阅读本文档约 10 分钟，完成整个工作流约 2-4 周
 
-> 返回 <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">README 主文档</a> | 如需概览和快速开始，点击链接
+> [返回 README 主文档](../README.md#全部文档索引) | 如需概览和快速开始，点击链接
 
 ---
 
 ## 目录
 
-1. [工作流总览](#工作流总览)
-2. [阶段一：需求整理（Kimi Agent）](#阶段一需求整理kimi-agent)
-3. [阶段二：代码开发与仿真（Claude Code）](#阶段二代码开发与仿真claude-code)
-4. [阶段三：论文初稿编写（Markdown）](#阶段三论文初稿编写markdown)
-5. [阶段四：格式转换（Pandoc）](#阶段四格式转换pandoc)
-6. [阶段五：内容完善（人工修改）](#阶段五内容完善人工修改)
-7. [阶段六：初步排版（Lark-Formatter）](#阶段六初步排版lark-formatter)
-8. [阶段七：精细排版（WorkBuddy）](#阶段七精细排版workbuddy)
-9. [阶段七（续）：PPT 制作（pptx Skill）](#阶段七续ppt-制作pptx-skill)
-10. [阶段八：最终校对与提交](#阶段八最终校对与提交)
-11. [时间规划建议](#时间规划建议)
-12. [各工具协作关系图](#各工具协作关系图)
-13. [总结](#总结)
+1. [工作流总览](#1-工作流总览)
+2. [阶段一：需求整理（Kimi Agent）](#2-阶段一需求整理kimi-agent)
+3. [阶段二：代码开发与仿真（Claude Code）](#3-阶段二代码开发与仿真claude-code)
+4. [阶段三：论文初稿编写（Markdown）](#4-阶段三论文初稿编写markdown)
+5. [阶段四：格式转换（Pandoc）](#5-阶段四格式转换pandoc)
+6. [阶段五：内容完善（人工修改）](#6-阶段五内容完善人工修改)
+7. [阶段六：初步排版（Lark-Formatter）](#7-阶段六初步排版lark-formatter)
+8. [阶段七：精细排版（WorkBuddy）](#8-阶段七精细排版workbuddy)
+9. [阶段七（续）：PPT 制作（pptx Skill）](#9-阶段七续ppt-制作pptx-skill)
+10. [阶段八：最终校对与提交](#10-阶段八最终校对与提交)
+11. [时间规划建议](#11-时间规划建议)
+12. [各工具协作关系图](#12-各工具协作关系图)
+13. [总结](#13-总结)
 
 ---
 
@@ -203,6 +203,49 @@ brainstorming 会帮你：
 
 ---
 
+## 开始之前：验证环境
+
+在正式进入工作流之前，建议先运行环境检查脚本，确保所有工具都已正确安装。
+
+### 环境检查脚本
+
+下载 `check_env.bat` 到项目根目录，双击运行。
+
+**运行效果（全部成功）：**
+```
+========================================
+  Thesis AI Workflow - Environment Check
+========================================
+
+[1/5] Checking Git ...
+  [OK] git version 2.53.0.windows.1
+[2/5] Checking Node.js ...
+  [OK] v24.14.1
+[3/5] Checking npm ...
+  [OK] npm 11.11.0
+[4/5] Checking Claude Code ...
+  [OK] Claude Code is installed
+[5/5] Checking Pandoc ...
+  [OK] Pandoc is installed
+
+========================================
+  Check Complete
+========================================
+```
+
+**运行效果（部分缺失）：**
+```
+[1/5] Checking Git ...
+  [OK] git version 2.53.0.windows.1
+[2/5] Checking Node.js ...
+  [FAIL] Node.js is not installed
+...
+```
+
+如果某项显示 `[FAIL]`，请回到对应章节重新安装该工具。
+
+---
+
 ## 3. 阶段二：代码开发与仿真（Claude Code）
 
 ### 3.1 目标
@@ -216,12 +259,12 @@ brainstorming 会帮你：
 
 ### 3.2 使用工具
 
-**Claude Code**（详见 <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">Claude Code 配置教程</a>）
+**Claude Code**（详见 [Claude Code 配置教程](./01-claude-code-setup.md)）
 
 ### 3.3 操作步骤
 
 ```
-1. 打开终端（PowerShell）
+1. 打开终端（CMD）
 2. 进入项目文件夹：
    cd d:\你的项目路径
 3. 启动 Claude Code：
@@ -390,7 +433,7 @@ lang: zh-CN
 
 ### 5.2 使用工具
 
-**Pandoc**（详见 <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">Pandoc 使用教程</a>）
+**Pandoc**（详见 [Pandoc 使用教程](./03-pandoc-usage.md)）
 
 ### 5.3 操作步骤
 
@@ -423,63 +466,15 @@ lang: zh-CN
 
 ## 6. 阶段五：内容完善（人工修改）
 
-### 6.1 这是最重要的一步！！！
+> ⚠️ **重要提醒**：这一步没有 AI 参与，完全靠你自己！AI 生成的只是"草料"，你需要把它变成"菜肴"。你的独立思考和分析是论文的灵魂，学术诚信要求所有核心内容必须是原创。
 
-**这一步没有 AI 参与，完全靠你自己！**
+> 💡 **修改原则**：用你自己的话重写AI生成的内容、补充真实的分析和见解、确保所有数据真实、保持语言风格统一。
 
-### 6.2 为什么这一步最重要？
-
-- AI 生成的只是"草料"，你需要把它变成"菜肴"
-- 你的独立思考和分析是论文的灵魂
-- 导师审阅的是**你的理解**，不是 AI 的文字堆砌
-- 学术诚信要求所有核心内容必须是原创
-
-### 6.3 具体要做的事
-
-#### 6.3.1 重写所有 AI 生成的段落
-
-```
-原文（AI生成）：
-"深度学习技术在近年来取得了显著的进展，其通过多层神经网络结构
-能够自动提取数据的层次化特征表示..."
-
-改为（你自己写的）：
-"在本研究中，我们采用了卷积神经网络（CNN）作为核心特征提取器。
-选择 CNN 的原因有三方面：（1）其在图像局部特征捕捉方面的天然优势；
-（2）参数共享机制大幅降低了模型复杂度；（3）经过预训练的 CNN
-可以作为有效的特征提取器..."
-```
-
-#### 6.3.2 补充真实的分析和见解
-
-- [ ] 加入你对实验结果的**个人解读**
-- [ ] 说明为什么某个方法比另一个更好
-- [ ] 分析失败的原因和改进方向
-- [ ] 联系实际应用场景讨论意义
-
-#### 6.3.3 确保所有数据真实
-
-- [ ] 所有数字都是实际运行的**真实结果**
-- [ ] 所有引用文献都**真实存在**
-- [ ] 所有图表都是自己**生成的**
-- [ ] 不要编造任何数据！
-
-#### 6.3.4 语言风格统一
-
-- [ ] 全文保持一致的叙述口吻
-- [ ] 专业术语使用一致
-- [ ] 避免中英文混杂（专有名词除外）
-- [ ] 检查语法和错别字
-
-### 6.4 修改时长建议
-
-**至少预留1-2个月时间**来专门做这件事。不要急于进入排版环节。
-
-### 6.5 使用 Claude Code + Skills 辅助润色
+### 6.1 使用 Claude Code + Skills 辅助润色
 
 除了人工修改，还可以用 Claude Code 配合以下 Skills 进行辅助润色。
 
-#### 6.5.1 academic-paper-reviewer — 学术论文评审
+#### 6.1.1 academic-paper-reviewer — 学术论文评审
 
 这是专门用于检查学术论文的 Skill，可以帮你：
 - 检查论文逻辑结构和连贯性
@@ -496,7 +491,7 @@ lang: zh-CN
 3. 根据建议进行修改
 ```
 
-#### 6.5.2 pdf Skill — 处理 PDF 文献
+#### 6.1.2 pdf Skill — 处理 PDF 文献
 
 在润色阶段，可能需要回顾和引用 PDF 格式的文献：
 
@@ -510,7 +505,7 @@ lang: zh-CN
 3. 提取关键信息用于论文
 ```
 
-#### 6.5.3 docx Skill — 处理 Word 文档
+#### 6.1.3 docx Skill — 处理 Word 文档
 
 用于检查和修改论文格式：
 
@@ -524,11 +519,28 @@ lang: zh-CN
 3. 应用修改
 ```
 
-#### 6.5.4 注意事项
+#### 6.1.4 注意事项
 
 - AI 润色只是辅助，核心内容和观点必须自己完成
 - 润色后务必通读全文，确保意思没有偏离
 - 参考文献和引用务必核实真实性
+
+### 6.2 学术规范提醒
+
+**Q: AI生成的内容可以直接提交吗？**
+
+**A:** **不可以！** AI只能作为辅助工具，你需要：
+1. 用自己的话重写AI生成的内容
+2. 添加自己的分析和见解
+3. 确保实验数据真实可靠
+4. 检查所有引用是否真实存在
+
+**Q: 如何正确引用AI工具？**
+
+**A:** 不同学校要求不同，一般建议：
+1. 在致谢中说明使用了AI工具辅助
+2. 在方法部分说明AI的具体用途
+3. 咨询导师或查阅学校的学术规范文件
 
 ---
 
@@ -610,7 +622,7 @@ lang: zh-CN
 **WorkBuddy（腾讯小龙虾）下载地址：** https://www.codebuddy.cn/work/  
 **Paper Check Skill 下载地址：** https://clawhub.ai/sashavegal/paper-check  
 
-详细操作指南 → <a href="./04-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">WorkBuddy 排版教程</a>
+详细操作指南：[WorkBuddy 排版教程](./04-workbuddy-guide.md)
 
 ### 8.3 核心流程概要
 
@@ -891,10 +903,10 @@ Markdown 论文初稿
 
 | 想了解更多？ | 跳转到 |
 |-------------|--------|
-| Claude Code 配置 | <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">查看教程</a> |
-| API 密钥配置 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">查看教程</a> |
-| Pandoc 使用 | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">查看教程</a> |
-| WorkBuddy 排版 | <a href="./04-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">查看教程</a> |
+| Claude Code 配置 | [查看教程](./01-claude-code-setup.md) |
+| API 密钥配置 | [查看教程](./02-cc-switch-guide.md) |
+| Pandoc 使用 | [查看教程](./03-pandoc-usage.md) |
+| WorkBuddy 排版 | [查看教程](./04-workbuddy-guide.md) |
 
 ---
 
@@ -906,18 +918,18 @@ Markdown 论文初稿
 
 | # | 文档 | 状态 |
 |---|------|------|
-| 1 | <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">README 主文档</a> | 已读完 |
-| 2 | <a href="./01-claude-code-setup.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">01 Claude Code 配置</a> | 已读完 |
-| 3 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">02 CC Switch 配置</a> | 已读完 |
-| 4 | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">03 Pandoc 使用</a> | 已读完 |
-| 5 | <a href="./04-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">04 WorkBuddy 排版</a> | 已读完 |
+| 1 | [README 主文档](../README.md#全部文档索引) | 已读完 |
+| 2 | [01 Claude Code 配置](./01-claude-code-setup.md) | 已读完 |
+| 3 | [02 CC Switch 配置](./02-cc-switch-guide.md) | 已读完 |
+| 4 | [03 Pandoc 使用](./03-pandoc-usage.md) | 已读完 |
+| 5 | [04 WorkBuddy 排版](./04-workbuddy-guide.md) | 已读完 |
 | **6** | **06 完整工作流** | 当前阅读中（最后一篇） |
 
 ### 上一篇
 
 | 上一篇 |
 |:---:|
-| <a href="./04-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">5 04 WorkBuddy 排版</a> |
+| [5 04 WorkBuddy 排版](./04-workbuddy-guide.md) |
 
 ---
 
@@ -926,13 +938,7 @@ Markdown 论文初稿
 </p>
 
 <p align="center">
-  <a href="../README.md#快速开始" style="display: inline-block; padding: 12px 28px; background-color: #0969da; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; margin: 8px;">
-    从快速开始安装环境
-  </a>
-  &nbsp;&nbsp;
-  <a href="../README.md" style="display: inline-block; padding: 12px 28px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 15px; margin: 8px;">
-    回到 README 总览
-  </a>
+  [从快速开始安装环境](../README.md#快速开始) | [回到 README 总览](../README.md)
 </p>
 
 > 记住：AI 帮你提效，才华属于你自己。祝你毕业顺利！

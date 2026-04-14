@@ -3,24 +3,23 @@
 > **适用人群：** 从未使用过 Claude Code 的初学者
 > **预计耗时：** 20-30 分钟
 
-> 返回 <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">README 主文档</a> | 如需概览和快速开始，点击链接
+> [返回 README 主文档](../README.md#全部文档索引) | 如需概览和快速开始，点击链接
 
 ---
 
 ## 目录
 
-1. [Claude Code 是什么？](#claude-code-是什么)
-2. [系统要求与前置依赖](#系统要求与前置依赖)
-3. [安装 Git for Windows](#安装-git-for-windows)
-4. [安装 Node.js](#安装-nodejs)
-5. [安装 Claude Code](#安装-claude-code)
-6. [验证安装成功](#验证安装成功)
-7. [首次启动与登录（可选）](#首次启动与登录可选)
-8. [跳过登录的方法](#跳过登录的方法)
-9. [Claude Code Skills 系统](#claude-code-skills-系统)
-10. [Claude Code 常用指令大全](#claude-code-常用指令大全)
-11. [基础使用示例](#基础使用示例)
-12. [参考资源](#参考资源)
+1. [Claude Code 是什么？](#1-claude-code-是什么)
+2. [系统要求与前置依赖](#2-系统要求与前置依赖)
+3. [安装 Git for Windows](#3-安装-git-for-windows)
+4. [安装 Node.js](#4-安装-nodejs)
+5. [安装 Claude Code](#5-安装-claude-code)
+6. [验证安装成功](#6-验证安装成功)
+7. [首次启动与登录（可选）](#7-首次启动与登录可选)
+8. [跳过登录的方法](#8-跳过登录的方法)
+9. [Claude Code Skills 系统](#9-claude-code-skills-系统)
+10. [Claude Code 常用指令大全](#10-claude-code-常用指令大全)
+11. [参考资源](#12-参考资源)
 
 ---
 
@@ -58,7 +57,7 @@
 | **操作系统** | Windows 10 (版本 1809 / build 17763) 及以上，**64位系统** |
 | **内存 (RAM)** | 4 GB 以上 |
 | **网络** | 需要能访问 API 服务（或配置代理） |
-| **Shell** | PowerShell、CMD 或 Git Bash |
+| **Shell** | CMD、PowerShell 或 Git Bash |
 
 ### 2.2 前置依赖清单（必须全部安装！）
 
@@ -124,7 +123,7 @@
    → 推荐选择第二个选项：
      "Git from the command line and also from 3rd-party software"
      （从命令行以及第三方软件中使用 Git）
-   → 这样 Git 命令在 PowerShell 中也能直接使用 → Next
+   → 这样 Git 命令在 CMD 中也能直接使用 → Next
 
 第 8 步：选择 SSH 执行文件 → 默认 → Next
 第 9 步：选择 HTTPS 后端传输 → 默认 → Next
@@ -139,7 +138,7 @@
 
 ### 3.3 步骤三：验证 Git 安装成功
 
-打开终端（PowerShell），输入：
+打开终端（CMD），输入：
 
 ```bash
 git --version
@@ -169,7 +168,7 @@ C:\Program Files\Git\cmd\git.exe
 
 只要能看到路径就说明 PATH 配置正确。
 
-> 如果 `where` 命令不可用，也可以用 PowerShell 的 `Get-Command git` 替代。
+> 如果 `where` 命令不可用，也可以用 CMD 的 `Get-Command git` 替代。
 
 ### 3.5 Git 安装失败排查
 
@@ -179,7 +178,7 @@ C:\Program Files\Git\cmd\git.exe
 |---------|------|
 | 1 | **关闭终端，重新打开一个新窗口**再试 |
 | 2 | **重启电脑**后再试 |
-| 3 | 手动添加 PATH（管理员 PowerShell 运行）：<br>`[Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Git\cmd", "User")`<br>然后重启终端 |
+| 3 | 手动添加 PATH（管理员 CMD 运行）：<br>`setx Path "%Path%;C:\Program Files\Git\cmd"`<br>然后重启终端 |
 
 ---
 
@@ -187,7 +186,7 @@ C:\Program Files\Git\cmd\git.exe
 
 在继续安装 Node.js 之前，请确认你已经了解以下内容（详见 README.md 中的「终端基础操作」部分）：
 
-- [ ] 如何打开终端（PowerShell / 命令提示符）
+- [ ] 如何打开终端（CMD）
 - [ ] 基本命令：`cd`、`dir`、`d:` 切换磁盘
 - [ ] 如何用记事本编辑文件
 
@@ -216,7 +215,7 @@ Claude Code 基于 Node.js 开发，所以需要先安装 Node.js。
 
 ### 4.3 步骤三：验证 Node.js 安装
 
-打开终端（PowerShell），输入：
+打开终端（CMD），输入：
 
 ```bash
 node --version
@@ -264,7 +263,7 @@ npm install -g @anthropic-ai/claude-code
 安装过程中 npm 可能会询问一些问题：
 
 - **`Do you want to continue? (y)` → 输入 `y` 回车**
-- 如果有权限警告，可以忽略（或用管理员身份运行 PowerShell）
+- 如果有权限警告，可以忽略（或用管理员身份运行 CMD）
 
 ### 5.3 安装完成标志
 
@@ -345,7 +344,7 @@ claude --version
 
 ### 7.2 方法二：使用第三方 API（推荐国内用户）
 
-通过 CC Switch 配置其他 API 服务商（如 DeepSeek、MiniMax、Kimi 等），详见 <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">🔑 CC Switch 配置教程 →</a>。
+通过 CC Switch 配置其他 API 服务商（如 DeepSeek、MiniMax、Kimi 等），详见 [🔑 CC Switch 配置教程](./02-cc-switch-guide.md)
 
 ---
 
@@ -381,7 +380,7 @@ C:\Users\LENOVO\.claude.json
 **方法 B — 通过终端：**
 
 ```bash
-# 在 PowerShell 中输入：
+# 在 CMD 中输入：
 explorer C:\Users\LENOVO
 ```
 
@@ -699,7 +698,7 @@ claude
 ### Q: 安装时报错 "EACCES permission denied"
 
 **A:** 这是权限问题。解决方法：
-- Windows：以管理员身份运行 PowerShell
+- Windows：以管理员身份运行 CMD
 - macOS/Linux：在命令前加 `sudo`
 
 ### Q: `git` 命令找不到 / 不是内部或外部命令
@@ -708,9 +707,9 @@ claude
 1. 关闭终端，重新打开新窗口再试 `git --version`
 2. 重启电脑后再试
 3. 如果仍不行，重新安装 Git 并确保第 7 步选择了正确的 PATH 选项（见上方「步骤二」说明）
-4. 手动添加 PATH：
-   ```powershell
-   [Environment]::SetEnvironmentVariable("Path", $env:Path + ";C:\Program Files\Git\cmd", "User")
+4. 手动添加 PATH（管理员CMD运行）：
+   ```
+   setx Path "%Path%;C:\Program Files\Git\cmd"
    ```
    然后重启终端。
 
@@ -732,9 +731,45 @@ claude
 2. npm 全局路径没有加入 PATH → 重启终端
 3. Claude Code 安装失败 → 重新运行安装命令
 
+### Q: CMD中无法访问外网（如Claude官网）？
+
+**A:** 如果你使用了代理软件，CMD命令行工具默认不会走代理。需要开启**TUN模式**（虚拟网卡模式）来让所有流量都走代理。以Watt Toolkit为例：
+1. 打开 Watt Toolkit
+2. 开启 "TUN模式"（或"虚拟网卡模式"）
+3. 重启终端后再试
+
+> 注意：TUN模式会让所有网络流量走代理，可能影响国内网站访问，不需要时记得关闭。
+
+### Q: 安装时被Windows Defender拦截？
+
+**A:** 这是正常现象，AI工具可能被误报为威胁。解决方法：
+1. 点击"更多信息"
+2. 点击"仍要运行"
+3. 如果仍被拦截，暂时关闭Windows Defender实时保护（安装完成后记得开启）
+
+### Q: Windows用户名是中文，安装后工具报错？
+
+**A:** 中文用户名可能导致编码问题。解决方法：
+1. 将项目放在纯英文路径下（如 `D:\Project\thesis`）
+2. 或者创建一个新的英文用户账户
+
+### Q: npm install执行很慢或卡住？
+
+**A:** 这是网络问题，可以尝试以下方法：
+1. 开启代理后重试
+2. 切换到国内镜像：`npm config set registry https://registry.npmmirror.com`
+3. 使用cnpm：`npm install -g cnpm`，然后用 `cnpm install` 代替 `npm install`
+
+### Q: GitHub访问很慢或打不开？
+
+**A:** 这是国内网络环境的问题，可以尝试：
+1. 使用Watt Toolkit（微软应用商店下载）开启GitHub加速
+2. 使用GitHub镜像站：https://gh.api.99988866.xyz/
+3. 使用Gitee等国内Git平台
+
 ---
 
-> 下一步：学习如何使用 CC Switch 配置 API 密钥 → <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 12px;">CC Switch 配置教程</a>
+> 下一步：学习如何使用 CC Switch 配置 API 密钥：[CC Switch 配置教程](./02-cc-switch-guide.md)
 
 ---
 
@@ -746,15 +781,15 @@ claude
 
 | # | 文档 | 状态 |
 |---|------|------|
-| 1 | <a href="../README.md#全部文档索引" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">README 主文档</a> | 已读完 |
+| 1 | [README 主文档](../README.md#全部文档索引) | 已读完 |
 | **2** | **01 Claude Code 配置** | 当前阅读中 |
-| 3 | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">02 CC Switch 配置</a> | 接下来读 |
-| 4 | <a href="./03-pandoc-usage.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">03 Pandoc 使用</a> | 待阅读 |
-| 5 | <a href="./04-workbuddy-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">04 WorkBuddy 排版</a> | 待阅读 |
-| 6 | <a href="./05-workflow-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #2ea44f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">05 完整工作流</a> | 待阅读 |
+| 3 | [02 CC Switch 配置](./02-cc-switch-guide.md) | 接下来读 |
+| 4 | [03 Pandoc 使用](./03-pandoc-usage.md) | 待阅读 |
+| 5 | [04 WorkBuddy 排版](./04-workbuddy-guide.md) | 待阅读 |
+| 6 | [05 完整工作流](./05-workflow-guide.md) | 待阅读 |
 
 ### 上一篇 / 下一篇
 
 | 上一篇 | 下一篇 |
 |:---:|:---:|
-| <a href="../README.md" style="display: inline-block; padding: 6px 16px; background-color: #6c757d; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">1 README 主文档</a> | <a href="./02-cc-switch-guide.md" style="display: inline-block; padding: 6px 16px; background-color: #0969da; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">3  CC Switch 配置</a> |
+| [1 README 主文档](../README.md) | [3 CC Switch 配置](./02-cc-switch-guide.md) |
