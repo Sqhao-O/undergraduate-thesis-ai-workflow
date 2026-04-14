@@ -71,21 +71,6 @@
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-### 1.2 各阶段速查表
-
-| 阶段 | 任务 | 主要工具 | AI参与度 | 人工参与度 |
-|------|------|----------|----------|-----------|
-| 一 | 整理需求和思路 | Kimi Agent | 高 | 低 |
-| 二 | 写代码、做仿真 | Claude Code | 高 | 中 |
-| 三 | 编写论文初稿 | Markdown 编辑器 | 中 | 高 |
-| 四 | 转换为 Word 格式 | Pandoc | — | 低（自动） |
-| 五 | **内容完善** | **Word + 人脑** | **不用** | **最高** |
-| 六 | 初步格式排版 | Lark-Formatter | 中 | 中 |
-| 七 | 精细格式检查 | WorkBuddy (小龙虾) | 高 | 中 |
-| 八 | 最终校对人眼 + PDF | — | — | 最高 |
-
----
-
 ## 2. 阶段一：需求整理（Kimi Agent）
 
 ### 2.1 目标
@@ -98,7 +83,7 @@
 
 ### 2.2 使用工具
 
-**Kimi Agent**（https://kimi.moonshot.cn/）
+**Kimi网页或客户端的 Agent 功能**   https://www.kimi.com
 
 > 为什么用 Kimi？因为它的中文理解能力强、上下文窗口大，适合长文本的需求梳理。
 
@@ -168,7 +153,7 @@
 
 ```
 1. 在 Claude Code 中安装 Skill：
-   /skills add brainstorming
+   /find-skills 帮我安装 brainstorming skill
 
 2. 启动 brainstorming：
    请帮我分析 [你的研究方向] 的研究现状，
@@ -301,27 +286,6 @@ brainstorming 会帮你：
 > 帮我写个毕设
 > 你说该怎么做？
 > 我的程序出错了（但不给具体信息）
-```
-
-### 3.5 输出产物
-
-```
-项目文件夹/
-├── src/                 ← 源代码
-│   ├── main.py
-│   ├── simulator.py
-│   ├── utils.py
-│   └── ...
-├── data/                ← 数据文件
-│   ├── input/
-│   └── output/          ← 仿真结果数据
-├── tests/               ← 测试代码
-├── results/             ← 实验结果和图表
-│   ├── fig1_accuracy.png
-│   ├── fig2_loss.png
-│   └── data_results.csv
-├── requirements.txt     ← Python 依赖
-└── README.md            ← 项目说明
 ```
 
 ---
@@ -483,10 +447,10 @@ lang: zh-CN
 
 ```
 1. 安装 Skill：
-   /skills add academic-paper-reviewer
+   /find-skills 帮我安装 academic-paper-reviewer skill
 
 2. 使用 Skill 检查论文：
-   请检查论文的逻辑结构、语言表达、格式规范
+   这是我的肯科毕业设计，请检查论文的逻辑结构、语言表达、格式规范
 
 3. 根据建议进行修改
 ```
@@ -497,7 +461,7 @@ lang: zh-CN
 
 ```
 1. 安装 Skill：
-   /skills add pdf
+   /find-skills 帮我安装 pdf skill
 
 2. 读取 PDF 文献：
    请读取并总结这篇 PDF 的主要内容
@@ -511,7 +475,7 @@ lang: zh-CN
 
 ```
 1. 安装 Skill：
-   /skills add docx
+   /find-skills 帮我安装 docx skill
 
 2. 检查论文格式：
    请帮我检查论文格式，并生成修改建议
@@ -687,7 +651,7 @@ Markdown 论文初稿
 **pptx Skill** — Claude Code 的 PPT 制作技能
 
 ```
-/skills add pptx
+/find-skills 帮我安装 pptx skill
 ```
 
 详细 PPT 制作指南见下文。
